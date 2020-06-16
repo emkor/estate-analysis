@@ -1,0 +1,7 @@
+# Created by .ignore support plugin (hsz.mobi)
+.venv
+
+data
+*.csv
+*.log
+**tmp**
