@@ -1,4 +1,4 @@
-all: clean venv
+all: clean venv install
 
 PY3 = python
 VENV = .venv/estate-analysis
@@ -12,5 +12,9 @@ venv:
 	@echo "---- Installing virtualenv ----"
 	@mkdir -p $(VENV)
 	@$(PY3) -m venv $(VENV)
+	@$(PY3) -m pip install --upgrade pip
 
-.PHONY: all clean venv
+install:
+	@$(VENV_PY3) -m pip install -r requirements.txt
+
+.PHONY: all clean venv install
