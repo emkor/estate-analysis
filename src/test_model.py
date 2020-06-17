@@ -27,3 +27,9 @@ def test_should_serialize_to_json_and_back():
     back_to_obj = ParcelOffer.from_json(json_model)
 
     assert OFFER_MODEL == back_to_obj
+
+
+def test_should_dump_to_sql_row_and_back():
+    sql_row = OFFER_MODEL.to_sql_row()
+    parcel_offer = ParcelOffer.from_sql_row(sql_row)
+    assert OFFER_MODEL == parcel_offer

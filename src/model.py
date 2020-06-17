@@ -19,8 +19,16 @@ class Model:
     def to_json(self) -> Dict[str, Any]:
         raise NotImplementedError
 
+    @classmethod
+    def from_sql_row(cls, row: List[Any]) -> Optional['Model']:
+        raise NotImplementedError
+
+    def to_sql_row(self) -> List[Any]:
+        raise NotImplementedError
+
 
 class ParcelOffer(Model):
+
     def __init__(self, timestamp: datetime, ident: str, url: str, location: str, area_m2: float, price_pln: float,
                  title: str) -> None:
         self.timestamp = timestamp.replace(microsecond=0)
@@ -76,8 +84,24 @@ class ParcelOffer(Model):
         except (TypeError, ValueError, LookupError):
             return None
 
+    @classmethod
+    def from_sql_row(cls, row: List[Any]) -> Optional['ParcelOffer']:
+        try:
+            if len(row) == 7:
+                timestamp = datetime.fromisoformat(row[1])
+                return cls(timestamp, ident=row[0], url=row[2], location=row[4],
+                           area_m2=int(row[5]), price_pln=int(row[6]), title=row[3])
+            else:
+                return None
+        except (TypeError, ValueError, LookupError):
+            return None
+
+    def to_sql_row(self) -> List[Any]:
+        return [self.ident, self.timestamp.isoformat(), self.url, self.title, self.location, self.area_m2, self.price_pln]
+
 
 class Place(Model):
+
     def __init__(self, location: str, city: Optional[str], postcode: Optional[str], lat: Optional[float],
                  lon: Optional[float]):
         self.location = location
@@ -117,3 +141,10 @@ class Place(Model):
             return Place(*row) if len(row) == 5 else None
         except (TypeError, ValueError):
             return None
+
+    @classmethod
+    def from_sql_row(cls, row: List[Any]) -> Optional['Place']:
+        return cls.from_csv_row(row)
+
+    def to_sql_row(self) -> List[Any]:
+        return self.to_csv_row()
