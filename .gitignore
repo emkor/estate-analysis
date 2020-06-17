@@ -1,8 +1,8 @@
 # Created by .ignore support plugin (hsz.mobi)
 .venv
-data/
+offers/
 bucket/
 
-*.csv
 *.log
 **tmp**
+*.db
