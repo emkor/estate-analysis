@@ -5,6 +5,8 @@ import time
 from os import path
 from typing import Generator, List
 
+from more_itertools import chunked
+
 
 def setup_log(level: int = logging.INFO):
     logging.basicConfig(level=level, format="%(asctime)s.%(msecs)03d|%(levelname)-7s| %(message)s",
@@ -33,3 +35,10 @@ def read_csv(csv_file: str) -> Generator[List[str], None, None]:
         for line in csv.reader(csv_f, delimiter=';', quotechar='"', quoting=csv.QUOTE_MINIMAL):
             if line:
                 yield line
+
+
+def write_csv(csv_file: str, rows: Generator[List[str], None, None]):
+    with open(csv_file, "w") as csv_f:
+        writer = csv.writer(csv_f, delimiter=';', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+        for line in chunked(rows, 20):
+            writer.writerows(line)

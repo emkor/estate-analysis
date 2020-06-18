@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import argparse
 import sqlite3
 from logging import getLogger
 from typing import Optional, Type
@@ -47,10 +48,25 @@ def main(db_file: str, ddl_script: str, place_cache: str, offers_path: str):
                 c.close()
                 db_conn.commit()
             except sqlite3.IntegrityError as e:
-                log.warning(f"Could not insert {len(offers_chunk)} rows [{offers_chunk[0]}, ..., {offers_chunk[-1]}]: {e}")
+                log.warning(
+                    f"Could not insert {len(offers_chunk)} rows [{offers_chunk[0]}, ..., {offers_chunk[-1]}]: {e}")
 
     db_conn.close()
 
 
+def _parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description='Import CSV data into sqlite3 DB')
+    parser.add_argument('db', type=str, help='Path to sqlite3 DB file')
+    parser.add_argument('ddl', type=str, help='Path to SQL DDL script executed before data insertion')
+    parser.add_argument('place', type=str, help='Path to CSV file with Places cache')
+    parser.add_argument('offer', type=str, help='Path to directory containing offer CSV files')
+    return parser.parse_args()
+
+
+def cli_main():
+    args = _parse_args()
+    main(args.db, args.ddl, args.place, args.offer)
+
+
 if __name__ == '__main__':
-    main("../data/offers.db", "ddl.sql", "../data/place_cache.csv", "../offers")
+    cli_main()
