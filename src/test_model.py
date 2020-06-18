@@ -1,6 +1,7 @@
 from datetime import datetime
 
 from model import ParcelOffer
+from place_resolver import build_resolve_name
 
 OFFER_CSV_ROW = ["2020-04-16", "18:43:48", "www.olx.pl", "597681409", 1000, 169000,
                  "Gajków, wrocławski, Dolnośląskie",
@@ -33,3 +34,21 @@ def test_should_dump_to_sql_row_and_back():
     sql_row = OFFER_MODEL.to_sql_row()
     parcel_offer = ParcelOffer.from_sql_row(sql_row)
     assert OFFER_MODEL == parcel_offer
+
+
+def test_resolving_addresses():
+    args = [("www.olx.pl", "Oleśnica, oleśnicki, Dolnośląskie, Oleśnica", "Oleśnica, oleśnicki"),
+            ("www.olx.pl", "Milicz, milicki, Dolnośląskie", "Milicz, Dolnośląskie"),
+            ("www.olx.pl", "Świerzów, trzebnicki, dolnośląskie", "Świerzów, trzebnicki"),
+            ("www.otodom.pl", "ul. Wiśniowa, Wilkszyn, średzki, dolnośląskie", "Wilkszyn, średzki"),
+            ("www.otodom.pl", "Kalinowa 7-9, Jary, trzebnicki, dolnośląskie", "Jary, trzebnicki"),
+            ("www.olx.pl", "Nowosiedlice, gm. Dobroszyce, oleśnicki, Dolnośląskie", "Nowosiedlice, oleśnicki"),
+            ("www.olx.pl", "Trzebnica, trzebnicki, Dolnośląskie", "Trzebnica, trzebnicki"),
+            ("www.morizon.pl", "Oborniki Śląskie, Oborniki Śląskie, dolnośląskie", "Oborniki Śląskie, dolnośląskie"),
+            ("www.morizon.pl", "Główna, Miękinia Zakrzyce, Miękinia, dolnośląskie", "Zakrzyce, Miękinia"),
+            ("www.morizon.pl", "Świerkowa, miasto Kostomłoty, Kostomłoty, dolnośląskie", "Kostomłoty"),
+            ("www.morizon.pl", "Jana III Sobieskiego, wrocławski, Żórawina, dolnośląskie", "Żórawina, wrocławski"),
+            ]
+    for domain, location, expected in args:
+        actual = build_resolve_name(domain, location)
+        assert actual.lower() == expected.lower(), f"{location} should be '{expected.lower()}', but was '{actual.lower()}'"
