@@ -8,7 +8,7 @@ DATA_DIR = "offers"
 
 clean:
 	@echo "---- Cleaning cache and temporary files ----"
-	@rm -rf $(VENV) .pytest_cache
+	@rm -rf $(VENV) .pytest_cache offers.db
 
 venv:
 	@echo "---- Installing virtualenv ----"
@@ -23,5 +23,6 @@ install:
 dl-data:
 	@echo "---- Downloading data ----"
 	sh dl-data.sh $(BUCKET_CACHE_DIR) $(DATA_DIR)
+
 
 .PHONY: all clean venv install
