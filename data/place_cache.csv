@@ -773,7 +773,7 @@ dolnośląskie, Dobroszyce;Dobroszyce;;51.26554;17.34535
 dolnośląskie, Dobroszyce, Bartków;Bartków;;51.3156604;17.3437905
 dolnośląskie, Dobroszyce, Białe Błoto;Białe Błoto;;51.3325426;17.3541628
 dolnośląskie, Dobroszyce, Białe Błoto, Holendry;Białe Błoto;;51.3325426;17.3541628
-dolnośląskie, Dobroszyce, Dobra;;56-410;51.2674838;17.3296342
+dolnośląskie, Dobroszyce, Dobra;Dobra;56-410;51.23583;17.30418
 dolnośląskie, Dobroszyce, Dobroszyce;Dobroszyce;;51.26554;17.34535
 dolnośląskie, Dobroszyce, Dobroszyce Białe Błoto, Białe Błoto;Białe Błoto;;51.3325426;17.3541628
 dolnośląskie, Dobroszyce, Dobroszyce Dobra, Dobra;;56-410;51.2674838;17.3296342
@@ -890,7 +890,7 @@ dolnośląskie, Miękinia, Kadłub;Kadłub;;51.173811;16.6962107
 dolnośląskie, Miękinia, Krępice;Krępice;;51.162246;16.812383
 dolnośląskie, Miękinia, Księginice;Księginice;;51.2390465;16.7621483
 dolnośląskie, Miękinia, Lutynia;Lutynia;;51.1338357;16.787684
-dolnośląskie, Miękinia, Miękinia;;32-065;50.1434726;19.6305204
+dolnośląskie, Miękinia, Miękinia;Miękinia;32-065;51.190964;16.738685
 dolnośląskie, Miękinia, Miękinia Brzezina, Brzezina;Brzezina;;51.2018289;16.8321775
 dolnośląskie, Miękinia, Miękinia Krępice, Średzka;Krępice;;51.162246;16.812383
 dolnośląskie, Miękinia, Miękinia Lutynia, Nowa;Lutynia;;51.1338357;16.787684
@@ -1041,7 +1041,7 @@ dolnośląskie, Zawonia, Pęciszów;Pęciszów;;51.349956;17.184326
 dolnośląskie, Zawonia, Skotniki;Skotniki;;51.2866124;17.1594167
 dolnośląskie, Zawonia, Tarnowiec;Tarnowiec;;51.306137;17.187093
 dolnośląskie, Zawonia, Zawonia;Zawonia;;51.3156477;17.196555
-dolnośląskie, Zawonia, Złotów;;55-106;51.35638;17.28252
+dolnośląskie, Zawonia, Złotów;Złotów;55-106;51.35638;17.28252
 dolnośląskie, oleśnicki;;;51.2758659;17.5225304
 dolnośląskie, Środa Śląska;Środa Śląska;55-300;51.1638967;16.5942689
 dolnośląskie, Środa Śląska, Juszczyn;Juszczyn;;51.154941;16.679306
@@ -1084,7 +1084,7 @@ trzebnicka, Golędzinów, trzebnicki, dolnośląskie;Golędzinów;;51.2681253;16
 trzebnicki, Wisznia Mała, dolnośląskie;Wisznia Mała;;51.250346;17.0484111
 tuż za granicą Wrocławia, Nowa Wieś Wrocławska, wrocławski, dolnośląskie;Nowa Wieś Wrocławska;;51.046552;16.9141961
 ul. Bolesława Chrobrego, Brzezina, średzki, dolnośląskie;Brzezina;;51.2018289;16.8321775
-ul. Brzozowa, Bukowice, milicki, dolnośląskie;;56-321;51.3961111;17.3033333
+ul. Brzozowa, Bukowice, milicki, dolnośląskie;Bukowice;56-321;51.3961111;17.3033333
 ul. Bursztynowa, Kamień, wrocławski, dolnośląskie;Kamień;;51.1662532;17.2183163
 ul. Chmielna, Bogdaszowice, wrocławski, dolnośląskie;Bogdaszowice;;51.085896;16.78349
 ul. Chłopska, Smolec, wrocławski, dolnośląskie;Smolec;;51.0747049;16.8839452
@@ -1196,7 +1196,6 @@ wrocławski, Żórawina, dolnośląskie;Żórawina;55-020;50.9801213;17.0405147
 Żmigród, trzebnicki, Dolnośląskie;Żmigród;;51.4717386;16.9082719
 Żmigród, trzebnicki, dolnośląskie;Żmigród;;51.4717386;16.9082719
 Żmigródek, trzebnicki, Dolnośląskie;Żmigródek;55-140;51.486014;16.915811
-Żurawiniec, Krępice, średzki, dolnośląskie;Krępice;Żurawiniec;55-330;51.1755488;16.8146192
 Żurawiniec, Miękinia, dolnośląskie;Żurawiniec;55-330;51.1755488;16.8146192
 Żurawiniec, średzki, Dolnośląskie;Żurawiniec;55-330;51.1755488;16.8146192
 Żurawiniec, średzki, dolnośląskie;Żurawiniec;55-330;51.1755488;16.8146192
