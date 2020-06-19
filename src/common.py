@@ -3,7 +3,7 @@ import logging
 import os
 import time
 from os import path
-from typing import Generator, List
+from typing import Generator, List, Iterable
 
 from more_itertools import chunked
 
@@ -25,11 +25,6 @@ def list_csv_files(dir_path: str) -> List[str]:
                    and path.splitext(f)[-1].lower() == ".csv"])
 
 
-def read_simple_csv(csv_file: str) -> Generator[str, None, None]:
-    with open(csv_file, "r") as csv_f:
-        return (line.strip() for line in csv_f.read().splitlines() if line.strip())
-
-
 def read_csv(csv_file: str) -> Generator[List[str], None, None]:
     with open(csv_file, "r") as csv_f:
         for line in csv.reader(csv_f, delimiter=';', quotechar='"', quoting=csv.QUOTE_MINIMAL):
@@ -37,7 +32,7 @@ def read_csv(csv_file: str) -> Generator[List[str], None, None]:
                 yield line
 
 
-def write_csv(csv_file: str, rows: Generator[List[str], None, None]):
+def write_csv(csv_file: str, rows: Iterable[List[str]]):
     with open(csv_file, "w") as csv_f:
         writer = csv.writer(csv_f, delimiter=';', quotechar='"', quoting=csv.QUOTE_MINIMAL)
         for line in chunked(rows, 20):

@@ -29,8 +29,8 @@ class Model:
 
 class ParcelOffer(Model):
 
-    def __init__(self, timestamp: datetime, ident: str, url: str, location: str, area_m2: float, price_pln: float,
-                 title: str) -> None:
+    def __init__(self, timestamp: datetime, ident: str, url: str, location: Optional[str], area_m2: float,
+                 price_pln: float, title: Optional[str]) -> None:
         self.timestamp = timestamp.replace(microsecond=0)
         self.ident = ident
         self.url = url
@@ -57,15 +57,15 @@ class ParcelOffer(Model):
 
     def to_csv_row(self) -> List[str]:
         return [self.timestamp.date().isoformat(), self.timestamp.time().isoformat(),
-                self.domain, self.ident, self.area_m2, self.price_pln, self.location, self.url, self.title]
+                self.domain, self.ident, self.area_m2, self.price_pln, self.location or "", self.url, self.title or ""]
 
     @classmethod
     def from_csv_row(cls, cells: List[str]) -> Optional['ParcelOffer']:
         try:
             if len(cells) == 9:
                 timestamp = datetime.fromisoformat(f"{cells[0]}T{cells[1]}")
-                return cls(timestamp, ident=cells[3], url=cells[7], location=cells[6],
-                           area_m2=int(cells[4]), price_pln=int(cells[5]), title=cells[8])
+                return cls(timestamp, ident=cells[3], url=cells[7], location=cells[6] or None,
+                           area_m2=int(cells[4]), price_pln=int(cells[5]), title=cells[8] or None)
             else:
                 return None
         except (TypeError, ValueError, LookupError):
@@ -97,7 +97,8 @@ class ParcelOffer(Model):
             return None
 
     def to_sql_row(self) -> List[Any]:
-        return [self.ident, self.timestamp.isoformat(), self.url, self.title, self.location, self.area_m2, self.price_pln]
+        return [self.ident, self.timestamp.isoformat(), self.url, self.title or None, self.location or None,
+                self.area_m2, self.price_pln]
 
 
 class Place(Model):
@@ -122,6 +123,10 @@ class Place(Model):
     def __str__(self):
         return f"{self.__class__.__name__}({self.location}, {self.city}, {self.postcode}, {round(self.lat, 3)}, {round(self.lon, 3)})"
 
+    @property
+    def resolved(self) -> str:
+        return self.lat is not None and self.lon is not None
+
     def to_json(self) -> Dict[str, Any]:
         return deepcopy(self.__dict__)
 
@@ -138,7 +143,7 @@ class Place(Model):
     @classmethod
     def from_csv_row(cls, row: List[str]) -> Optional['Place']:
         try:
-            return Place(*row) if len(row) == 5 else None
+            return Place(*(r or None for r in row)) if len(row) == 5 else None
         except (TypeError, ValueError):
             return None
 

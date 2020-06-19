@@ -37,17 +37,20 @@ def test_should_dump_to_sql_row_and_back():
 
 
 def test_resolving_addresses():
-    args = [("www.olx.pl", "Oleśnica, oleśnicki, Dolnośląskie, Oleśnica", "Oleśnica, oleśnicki"),
-            ("www.olx.pl", "Milicz, milicki, Dolnośląskie", "Milicz, Dolnośląskie"),
+    args = [("www.olx.pl", "Oleśnica, oleśnicki, Dolnośląskie", "Oleśnica, oleśnicki"),
+            ("www.olx.pl", "Milicz, milicki, Dolnośląskie", "Milicz, milicki"),
             ("www.olx.pl", "Świerzów, trzebnicki, dolnośląskie", "Świerzów, trzebnicki"),
             ("www.otodom.pl", "ul. Wiśniowa, Wilkszyn, średzki, dolnośląskie", "Wilkszyn, średzki"),
             ("www.otodom.pl", "Kalinowa 7-9, Jary, trzebnicki, dolnośląskie", "Jary, trzebnicki"),
+            ("www.otodom.pl", "ul. Brzozowa, Bukowice, milicki, dolnośląskie", "Bukowice, milicki"),
             ("www.olx.pl", "Nowosiedlice, gm. Dobroszyce, oleśnicki, Dolnośląskie", "Nowosiedlice, oleśnicki"),
             ("www.olx.pl", "Trzebnica, trzebnicki, Dolnośląskie", "Trzebnica, trzebnicki"),
-            ("www.morizon.pl", "Oborniki Śląskie, Oborniki Śląskie, dolnośląskie", "Oborniki Śląskie, dolnośląskie"),
-            ("www.morizon.pl", "Główna, Miękinia Zakrzyce, Miękinia, dolnośląskie", "Zakrzyce, Miękinia"),
-            ("www.morizon.pl", "Świerkowa, miasto Kostomłoty, Kostomłoty, dolnośląskie", "Kostomłoty"),
-            ("www.morizon.pl", "Jana III Sobieskiego, wrocławski, Żórawina, dolnośląskie", "Żórawina, wrocławski"),
+            ("www.morizon.pl", "dolnośląskie, Oborniki Śląskie, Oborniki Śląskie", "Oborniki Śląskie"),
+            ("www.morizon.pl", "dolnośląskie, Miękinia, Miękinia Zakrzyce, Główna", "Zakrzyce, Miękinia"),
+            ("www.morizon.pl", "dolnośląskie, Czernica, Czernica Dobrzykowice, Krzykowska", "Dobrzykowice, Czernica"),
+            ("www.morizon.pl", "dolnośląskie, Kąty Wrocławskie, Kąty Wrocławskie Mokronos Dolny, Drogowców", "Mokronos Dolny, Kąty Wrocławskie"),
+            ("www.morizon.pl", "dolnośląskie, Sobótka, Sobótka", "Sobótka"),
+            ("www.morizon.pl", "Osolin, Oborniki Śląskie, dolnośląskie", "Osolin, Oborniki Śląskie"),
             ]
     for domain, location, expected in args:
         actual = build_resolve_name(domain, location)
