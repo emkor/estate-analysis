@@ -20,7 +20,7 @@ Biedaszków Mały, trzebnicki, Dolnośląskie;Biedaszków Mały;;51.4023966;17.0
 Biedaszków Wielki, Trzebnica, dolnośląskie;Biedaszków Wielki;;51.4012042;17.1370818
 Biedaszków Wielki, trzebnicki, Dolnośląskie;Biedaszków Wielki;;51.4012042;17.1370818
 Biedaszków Wielki, trzebnicki, dolnośląskie;Biedaszków Wielki;;51.4012042;17.1370818
-Bielany Wrocławskie, Kobierzyce, dolnośląskie;;55-041;51.0305128;16.939379
+Bielany Wrocławskie, Kobierzyce, dolnośląskie;Bielany Wrocławskie;55-041;51.03656;16.969463
 Bielany Wrocławskie, wrocławski, dolnośląskie;Bielany Wrocławskie;55-077;51.03656;16.969463
 Bielawa, Długołęka, dolnośląskie;Bielawa;;51.1603102;17.2522922
 Bielawa, wrocławski, dolnośląskie;Bielawa;;51.1603102;17.2522922
@@ -61,8 +61,8 @@ Brzyków, trzebnicki, Dolnośląskie;Brzyków;;51.3549922;17.0561113
 Brzyków, trzebnicki, dolnośląskie;Brzyków;;51.3549922;17.0561113
 Budczyce, Zawonia, dolnośląskie;Budczyce;;51.3330091;17.1818463
 Budczyce, trzebnicki, dolnośląskie;Budczyce;;51.3330091;17.1818463
-Bukowice, milicki, Dolnośląskie;;56-321;51.3961111;17.3033333
-Bukowice, milicki, dolnośląskie;;56-321;51.3961111;17.3033333
+Bukowice, milicki, Dolnośląskie;Bukowice;56-321;51.3961111;17.3033333
+Bukowice, milicki, dolnośląskie;Bukowice;56-321;51.3961111;17.3033333
 Bukowice, wołowski, Dolnośląskie;Bukowice;;51.30627;16.775808
 Bukowina, wrocławski, Dolnośląskie;Bukowina;;51.2106913;17.1404313
 Bursztynowa, Długołęka, dolnośląskie;;55-093;51.1695203;17.2111084
@@ -88,16 +88,16 @@ Cieśle, Oleśnica, dolnośląskie;Cieśle;;51.22489;17.47031
 Cieśle, oleśnicki, Dolnośląskie;Cieśle;;51.22489;17.47031
 Cieśle, oleśnicki, dolnośląskie;Cieśle;;51.22489;17.47031
 Czarne Piątkowo, Środa Wielkopolska, wielkopolskie;Czarne Piątkowo;;52.1946058;17.4009068
-Czernica, dolnośląskie;;77-330;53.6848096;16.9378653
+Czernica, dolnośląskie;Czernica;;51.048577;17.236374
 Czeszów, Zawonia, dolnośląskie;Czeszów;;51.3797685;17.245644
 Czeszów, trzebnicki, dolnośląskie;Czeszów;;51.3797685;17.245644
 Diamentowa, Kamień, wrocławski, dolnośląskie;Kamień;;51.1662532;17.2183163
 Diamentowa, Oleśnica, dolnośląskie;;;;
-Dobra, Dobra, oleśnicki, dolnośląskie;;56-410;51.2674838;17.3296342
-Dobra, Dobroszyce, dolnośląskie;;56-410;51.2674838;17.3296342
-Dobra, Oleśnica, oleśnicki, dolnośląskie;Oleśnica;56-400;51.2095314;17.3804559
-Dobra, oleśnicki, Dolnośląskie;;56-410;51.2674838;17.3296342
-Dobra, oleśnicki, dolnośląskie;;56-410;51.2674838;17.3296342
+Dobra, Dobra, oleśnicki, dolnośląskie;Dobra;56-410;51.23583;17.30418
+Dobra, Dobroszyce, dolnośląskie;Dobra;56-410;51.23583;17.30418
+Dobra, Oleśnica, oleśnicki, dolnośląskie;Dobra;56-410;51.23583;17.30418
+Dobra, oleśnicki, Dolnośląskie;Dobra;56-410;51.23583;17.30418
+Dobra, oleśnicki, dolnośląskie;Dobra;56-410;51.23583;17.30418
 Dobroszyce, dolnośląskie;Dobroszyce;;51.26554;17.34535
 Dobroszyce, oleśnicki, Dolnośląskie;Dobroszyce;;51.26554;17.34535
 Dobroszyce, oleśnicki, dolnośląskie;Dobroszyce;;51.26554;17.34535
@@ -134,7 +134,7 @@ Dębno Polskie, rawicki, Wielkopolskie;;63-900;51.58506;16.88105
 Dębno Polskie, rawicki, wielkopolskie;;63-900;51.58506;16.88105
 Dębno, Dębno, trzebnicki, dolnośląskie;Dębno;;51.5582349;16.8931013
 Dębno, trzebnicki, Dolnośląskie;Dębno;;51.5582349;16.8931013
-Długołęka, dolnośląskie;;;51.6759608;17.2029228
+Długołęka, dolnośląskie;Długołęka;;51.1743484;17.1933513
 Długołęka, wrocławski, Dolnośląskie;Długołęka;;51.1743484;17.1933513
 Długołęka, wrocławski, dolnośląskie;Długołęka;;51.1743484;17.1933513
 Fiołkowa, Bogdaszowice, wrocławski, dolnośląskie;Bogdaszowice;;51.085896;16.78349
@@ -248,9 +248,9 @@ Kowalowo, górowski, Dolnośląskie;Kowalowo;;51.55498;16.66424
 Kościelna, Lubnów, trzebnicki, dolnośląskie;Lubnów;;51.2628931;16.8854641
 Kraszów, Międzybórz, dolnośląskie;Kraszów;;51.3827991;17.6851825
 Krościna Mała, trzebnicki, Dolnośląskie;Krościna Mała;;51.3749445;16.9436101
-Krośnice, milicki, Dolnośląskie;;56-320;51.4747222;17.38
+Krośnice, milicki, Dolnośląskie;Krośnice;56-320;51.476068;17.359506
 Kruczyn, Nowe Miasto nad Wartą, wielkopolskie;;;;
-Kryniczno, Wisznia Mała, dolnośląskie;;55-114;51.2169821;17.0397203
+Kryniczno, Wisznia Mała, dolnośląskie;Kryniczno;55-114;51.2074747;17.0394225
 Kryniczno, trzebnicki, Dolnośląskie;Kryniczno;;51.2074747;17.0394225
 Kryniczno, trzebnicki, dolnośląskie;Kryniczno;;51.2074747;17.0394225
 Kryniczno, Środa Śląska, dolnośląskie;Kryniczno;;51.1301509;16.6699045
@@ -334,12 +334,12 @@ Milicz, milicki, Dolnośląskie;Milicz;56-300;51.5306022;17.2726447
 Milicz, milicki, dolnośląskie;Milicz;56-300;51.5306022;17.2726447
 Milin, Mietków, dolnośląskie;Milin;;50.977512;16.698375
 Miodary, Dobroszyce, dolnośląskie;;;51.2711372;17.398156274757
-Miodary, oleśnicki, Dolnośląskie;;;51.2711372;17.398156274757
+Miodary, oleśnicki, Dolnośląskie;Miodary;;51.271137;17.398156
 Mirków, Długołęka, dolnośląskie;Mirków;;51.1662782;17.1588597
 Mirków, wrocławski, dolnośląskie;Mirków;;51.1662782;17.1588597
 Mirosławice, Sobótka, dolnośląskie;Mirosławice;;50.9553134;16.7839001
 Międzybórz, dolnośląskie;Międzybórz;56-413;51.397711;17.6650165
-Miękinia, dolnośląskie;;32-065;50.1434726;19.6305204
+Miękinia, dolnośląskie;Miękinia;32-065;51.190964;16.738685
 Miękinia, średzki, Dolnośląskie;Miękinia;;51.190964;16.7386851
 Miękinia, średzki, dolnośląskie;Miękinia;;51.190964;16.7386851
 Miłonowice, Zawonia, dolnośląskie;Miłonowice;;51.2766696;17.2112848
@@ -395,14 +395,14 @@ Okolice Wrocławia Chrząstawa Mała, Wrocław, dolnośląskie;;;;
 Okolice Wrocławia. Wilkszyn, Wilkszyn, średzki, dolnośląskie;Wilkszyn;;51.1912884;16.8652332
 Okolice Wrocławia. Wilkszyn, Wrocław, dolnośląskie;;;;
 Oleśnica, dolnośląskie;Oleśnica;56-400;51.2095314;17.3804559
-Oleśnica, oleśnicki, Dolnośląskie, Lucień;;;51.2001542;17.3545049
+Oleśnica, oleśnicki, Dolnośląskie, Lucień;Oleśnica;56-400;51.2095314;17.3804559
 Oleśnica, oleśnicki, Dolnośląskie, Oleśnica;Oleśnica;56-400;51.2095314;17.3804559
 Oleśnica, oleśnicki, dolnośląskie;Oleśnica;56-400;51.2095314;17.3804559
 Oleśniczka, Długołęka, dolnośląskie;Oleśniczka;;51.1469694;17.2804047
 Oleśniczka, wrocławski, Dolnośląskie;Oleśniczka;;51.1469694;17.2804047
 Oleśniczka, wrocławski, dolnośląskie;Oleśniczka;;51.1469694;17.2804047
-Osiek Mały, trzebnicki, Dolnośląskie;;55-140;51.4637712;16.9844401
-Osiek, trzebnicki, Dolnośląskie;;;51.4723553;16.987251
+Osiek Mały, trzebnicki, Dolnośląskie;Osiek Mały;55-140;51.4637712;16.9844401
+Osiek, trzebnicki, Dolnośląskie;Osiek;;51.4723553;16.987251
 Osola, Oborniki Śląskie, dolnośląskie;Osola;;51.3353945;16.8662611
 Osolin - 900m km od stacji PKP, Osolin, trzebnicki, dolnośląskie;Osolin;;51.3423726;16.8467905
 Osolin, Oborniki Śląskie, dolnośląskie;Osolin;;51.3423726;16.8467905
@@ -534,7 +534,7 @@ Smolec, Kąty Wrocławskie, dolnośląskie;Smolec;;51.0747049;16.8839452
 Smolec, Smolec, wrocławski, dolnośląskie;Smolec;;51.0747049;16.8839452
 Smolec, gm. Kąty Wrocławskie, wrocławski, Dolnośląskie;Smolec;;51.0747049;16.8839452
 Smolec, wrocławski, dolnośląskie;Smolec;;51.0747049;16.8839452
-Smolna, oleśnicki, dolnośląskie;;56-420;51.1555465;17.5202779
+Smolna, oleśnicki, dolnośląskie;Smolna;56-420;51.166548;17.442724
 Sobótka, dolnośląskie;Sobótka;55-050;50.8990885;16.7445705
 Sokołowice, Oleśnica, dolnośląskie;Sokołowice;;51.24327;17.44625
 Sokołowice, oleśnicki, Dolnośląskie;Sokołowice;;51.24327;17.44625
@@ -644,8 +644,8 @@ Wisznia Mała, trzebnicki, dolnośląskie;Wisznia Mała;;51.250346;17.0484111
 Wojczyce, średzki, dolnośląskie;Wojczyce;;51.1413889;16.6852778
 Wojkowice, Żórawina, dolnośląskie;Wojkowice;;50.9801671;17.068649
 Wojnowice, Czernica, dolnośląskie;Wojnowice;55-003;51.0640207;17.2560587
-Wojnowice, Miękinia, dolnośląskie;;55-330;51.2031006;16.7957235
-Wojnowice, średzki, dolnośląskie;;55-330;51.2031006;16.7957235
+Wojnowice, Miękinia, dolnośląskie;Wojnowice;55-330;51.203101;16.795724
+Wojnowice, średzki, dolnośląskie;Wojnowice;55-330;51.203101;16.795724
 Wołów, wołowski, Dolnośląskie;Wołów;56-100;51.3375098;16.639015
 Wrocław, Dolnośląskie, Fabryczna;Legnica;;51.20957155;16.1495090105608
 Wrocław, Dolnośląskie, Krzyki;Wrocław;53-017;51.0711937;17.0043425
@@ -740,9 +740,9 @@ Zimnica, Oleśnica, dolnośląskie;Zimnica;;51.1551741;17.3881733
 Zimnica, oleśnicki, dolnośląskie;Zimnica;;51.1551741;17.3881733
 Zwola, Zaniemyśl, wielkopolskie;Zwola;;52.1448299;17.1594969
 Zębice, Siechnice, dolnośląskie;Zębice;;51.0043512;17.1522513
-Złotów, Zawonia, dolnośląskie;;55-106;51.35638;17.28252
-Złotów, trzebnicki, Dolnośląskie;;55-106;51.35638;17.28252
-Złotów, trzebnicki, dolnośląskie;;55-106;51.35638;17.28252
+Złotów, Zawonia, dolnośląskie;Złotów;55-106;51.35638;17.28252
+Złotów, trzebnicki, Dolnośląskie;Złotów;55-106;51.35638;17.28252
+Złotów, trzebnicki, dolnośląskie;Złotów;55-106;51.35638;17.28252
 al. Brzozowa, Ligota Piękna, trzebnicki, dolnośląskie;Ligota Piękna;55-114;51.2327723;17.0454379
 al. Sosnowa 35, Ligota Piękna, trzebnicki, dolnośląskie;Ligota Piękna;55-114;51.2327723;17.0454379
 dolnośląskie, Bierutów, Karwiniec;;;51.121313;17.5440991668836
@@ -750,7 +750,7 @@ dolnośląskie, Bierutów, Zbytowa;Zbytowa;;51.114837;17.42871
 dolnośląskie, Bierutów, oleśnicki, Rynek;Bierutów;56-420;51.125871;17.5437303
 dolnośląskie, Czernica, Chrząstawa Mała;Chrząstawa Mała;;51.081932;17.281738
 dolnośląskie, Czernica, Chrząstawa Wielka;Chrząstawa Wielka;55-001;51.0948751;17.2982583
-dolnośląskie, Czernica, Czernica;;77-330;53.6848096;16.9378653
+dolnośląskie, Czernica, Czernica;Czernica;;51.048577;17.236374
 dolnośląskie, Czernica, Czernica Dobrzykowice, Krzykowska;Dobrzykowice;;51.093811;17.190866
 dolnośląskie, Czernica, Czernica Dobrzykowice, Lawendowa;Dobrzykowice;;51.093811;17.190866
 dolnośląskie, Czernica, Czernica Dobrzykowice, Wrocławska;Dobrzykowice;;51.093811;17.190866
@@ -790,7 +790,7 @@ dolnośląskie, Długołęka, Bielawa;Bielawa;;51.1603102;17.2522922
 dolnośląskie, Długołęka, Borowa;Borowa;;51.1905872;17.2800031
 dolnośląskie, Długołęka, Bursztynowa;;55-093;51.1695203;17.2111084
 dolnośląskie, Długołęka, Byków;Byków;;51.1892645;17.2367251
-dolnośląskie, Długołęka, Długołęka;;;51.6759608;17.2029228
+dolnośląskie, Długołęka, Długołęka;Długołęka;;51.1743484;17.1933513
 dolnośląskie, Długołęka, Długołęka Bielawa, Jaśminowa;Bielawa;;51.1603102;17.2522922
 dolnośląskie, Długołęka, Długołęka Borowa, Wrocławska;Borowa;;51.1905872;17.2800031
 dolnośląskie, Długołęka, Długołęka Brzezia Łąka, Młyńska;Brzezia Łąka;;51.1229492;17.2437672
@@ -840,7 +840,7 @@ dolnośląskie, Kobierzyce, Polna;;55-040;50.9680927;16.9253817
 dolnośląskie, Kobierzyce, Tyniec Mały;Tyniec Mały;55-041;51.0190438;16.9211387
 dolnośląskie, Kobierzyce, Wierzbice;Wierzbice;;50.9539199;16.8927922
 dolnośląskie, Kobierzyce, miasto Kobierzyce, Witosa;;55-040;50.9705164;16.9327344
-dolnośląskie, Kobierzyce, Ślęza;;54-144;50.8850813;16.912674
+dolnośląskie, Kobierzyce, Ślęza;Ślęza;54-144;50.8850813;16.912674
 dolnośląskie, Kostomłoty, Chmielów;Chmielów;;51.0714236;16.741181
 dolnośląskie, Kostomłoty, Kostomłoty;Kostomłoty (osada);;51.9723973;23.6191588
 dolnośląskie, Kostomłoty, Ramułtowice;Ramułtowice;;51.095001;16.726766
@@ -912,7 +912,7 @@ dolnośląskie, Miękinia, Wróblowice;Wróblowice;;51.1575618;16.7835683
 dolnośląskie, Miękinia, Zakrzyce;Zakrzyce;;51.118196;16.78355
 dolnośląskie, Miękinia, średzki, Akacjowa;Miękinia;;51.190964;16.7386851
 dolnośląskie, Miękinia, Źródła;Źródła;;51.1605077;16.7245888
-dolnośląskie, Miękinia, Żurawiniec;;55-330;51.1755488;16.8146192
+dolnośląskie, Miękinia, Żurawiniec;Żurawiniec;55-330;51.1755488;16.8146192
 dolnośląskie, Oborniki Śląskie;Oborniki Śląskie;55-120;51.300704;16.9125929
 dolnośląskie, Oborniki Śląskie, Bagno;Bagno;;51.3392058;16.8203816
 dolnośląskie, Oborniki Śląskie, Golędzinów;Golędzinów;;51.2681253;16.9243584
@@ -1196,8 +1196,8 @@ wrocławski, Żórawina, dolnośląskie;Żórawina;55-020;50.9801213;17.0405147
 Żmigród, trzebnicki, Dolnośląskie;Żmigród;;51.4717386;16.9082719
 Żmigród, trzebnicki, dolnośląskie;Żmigród;;51.4717386;16.9082719
 Żmigródek, trzebnicki, Dolnośląskie;Żmigródek;55-140;51.486014;16.915811
-Żurawiniec, Krępice, średzki, dolnośląskie;Krępice;;51.162246;16.812383
-Żurawiniec, Miękinia, dolnośląskie;;55-330;51.1755488;16.8146192
-Żurawiniec, średzki, Dolnośląskie;;55-330;51.1755488;16.8146192
-Żurawiniec, średzki, dolnośląskie;;55-330;51.1755488;16.8146192
+Żurawiniec, Krępice, średzki, dolnośląskie;Krępice;Żurawiniec;55-330;51.1755488;16.8146192
+Żurawiniec, Miękinia, dolnośląskie;Żurawiniec;55-330;51.1755488;16.8146192
+Żurawiniec, średzki, Dolnośląskie;Żurawiniec;55-330;51.1755488;16.8146192
+Żurawiniec, średzki, dolnośląskie;Żurawiniec;55-330;51.1755488;16.8146192
 Żórawina, dolnośląskie;Żórawina;55-020;50.9801213;17.0405147
