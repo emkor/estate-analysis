@@ -33,7 +33,7 @@ GROUP BY date(timestamp)
 ORDER BY date(timestamp);
 
 CREATE VIEW IF NOT EXISTS latest_offers AS
-SELECT date_part('day', age(max(o.timestamp), min(OfferHistory."FirstOffer")))      AS "Age",
+SELECT CAST(JulianDay(max(o.timestamp)) - JulianDay(min(OfferHistory."FirstOffer")) AS INTEGER)      AS "Age",
        min(p.city) AS "City",
        min(o.location) AS "Location",
        round(min(o.price_pln) / min(o.area_m2))                                     AS "PricePerSqM",
@@ -64,9 +64,9 @@ FROM parcel_offer AS o
                            MIN(area_m2)   AS "Area"
                     FROM parcel_offer
                     GROUP BY ident) AS OfferHistory ON o.ident = OfferHistory.ident
-WHERE date(o.timestamp) = date(now())
+WHERE date(o.timestamp) = CURRENT_DATE
 GROUP BY o.url
-ORDER BY min(p.city), round(min(o.price_pln) / min(o.area_m2)), date_part('day', age(max(o.timestamp), min(OfferHistory."FirstOffer")));
+ORDER BY min(p.city), round(min(o.price_pln) / min(o.area_m2));
 
 CREATE VIEW IF NOT EXISTS "avg_city_price" AS
 SELECT city,
