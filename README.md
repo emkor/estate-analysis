@@ -1,1 +1,2 @@
-# estate-analysis
+# estate-analysis ![.github/workflows/analyze.yml](https://github.com/emkor/estate-analysis/workflows/.github/workflows/analyze.yml/badge.svg?branch=master)
+Set of Python scripts for analyzing scraped property offers
