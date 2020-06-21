@@ -1,6 +1,6 @@
 on:
   schedule:
-    - cron:  '25 6 * * *'
+    - cron:  '30 6 * * *'
   push:
     branches:
       - master
@@ -33,9 +33,20 @@ jobs:
       - name: Setup virtualenv and install dependencies
         run: make setup
         shell: bash
-      - name: Perform analysis on data scraped and hosted on Backblaze B2
-        run: make all
+      - name: Cache scraped offers
+        uses: actions/cache@v2
+        with:
+          path: ./bucket
+          key: b2-bucket
+      - name: Download scraped offer data from B2
+        run: make dl-data
         shell: bash
-      - name: Publish to GitHub gist
-        run: make publish
+      - name: Perform analysis
+        run: make analyze
+        shell: bash
+      - name: Render GeoJSON map and publish as gist
+        run: make render publish
+        shell: bash
+      - name: Publish rendered map as gist
+        run: make render publish
         shell: bash
