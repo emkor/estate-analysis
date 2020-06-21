@@ -167,6 +167,7 @@ Goszcz, oleśnicki, Dolnośląskie;Goszcz;;51.3942;17.48045
 Gosławice, średzki, dolnośląskie;Gosławice;;51.224082;16.825561
 Goździkowa, Dobrzykowice, wrocławski, dolnośląskie;Dobrzykowice;;51.093811;17.190866
 Grabownica, gm. Krośnice, milicki, Dolnośląskie;Grabownica;;51.5289376;17.3823625
+Grabowno Wielkie, oleśnicki, Dolnośląskie;Grabowno Wielkie;;51.3492;17.41683
 Grabowno Wielkie, oleśnicki, dolnośląskie;Grabowno Wielkie;;51.3492;17.41683
 Graniczna, Wilkszyn, średzki, dolnośląskie;Wilkszyn;;51.1912884;16.8652332
 Groblice, Siechnice, dolnośląskie;Groblice;;51.0126304;17.1745037
@@ -636,6 +637,7 @@ Wilczyn, Oborniki Śląskie, dolnośląskie;Wilczyn;;51.285838;16.956929
 Wilczyn, trzebnicki, dolnośląskie;Wilczyn;;51.285838;16.956929
 Wilkowa, Prusice, dolnośląskie;Wilkowa;;51.344607;16.9064661
 Wilkowa, trzebnicki, Dolnośląskie;Wilkowa;;51.344607;16.9064661
+Wilkowa, trzebnicki, dolnośląskie;Wilkowa;;51.344607;16.9064661
 Wilkowice, Żórawina, dolnośląskie;Wilkowice;;50.949566;17.0933204
 Wilkszyn, Miękinia, dolnośląskie;Wilkszyn;;51.1912884;16.8652332
 Wilkszyn, średzki, dolnośląskie;Wilkszyn;;51.1912884;16.8652332
@@ -710,6 +712,7 @@ Wrocław, Psie Pole, ul. Henryka Michała Kamieńskiego;Wrocław;51-313;51.14599
 Wrocław, Psie Pole, ul. Parkowa;Wrocław;51-313;51.1459988;17.114733
 Wrocław, dolnośląskie;Wrocław;;51.1089776;17.0326689
 Wrocław, Śródmieście, Zalesie;;;;
+Wrocławska 21, Januszkowice, wrocławski, dolnośląskie;Januszkowice;;51.2218167;17.2403388
 Wrocławska, Długołęka, wrocławski, dolnośląskie;Długołęka;;51.1743484;17.1933513
 Wrocławska, Miękinia, dolnośląskie;;;51.1860599;16.7396125
 Wrocławska, Oborniki Śląskie, trzebnicki, dolnośląskie;Oborniki Śląskie;55-120;51.300704;16.9125929
@@ -800,6 +803,7 @@ dolnośląskie, Długołęka, Długołęka Brzezia Łąka, Spokojna;Brzezia Łą
 dolnośląskie, Długołęka, Długołęka Brzezia Łąka, Wrocławska;Brzezia Łąka;;51.1229492;17.2437672
 dolnośląskie, Długołęka, Długołęka Kiełczów, Polna;Kiełczów;;51.1398527;17.1790872
 dolnośląskie, Długołęka, Długołęka Kiełczów, Rzeczna;Kiełczów;;51.1398527;17.1790872
+dolnośląskie, Długołęka, Długołęka Kiełczówek, Krokusowa;Kiełczówek;51-311;51.1187443;17.1878979
 dolnośląskie, Długołęka, Długołęka Mirków, Kiełczowska;Mirków;;51.1662782;17.1588597
 dolnośląskie, Długołęka, Długołęka Szczodre, Trzebnicka;Szczodre;55-095;51.1944026;17.1822017
 dolnośląskie, Długołęka, Januszkowice;Januszkowice;;51.2218167;17.2403388
@@ -812,6 +816,7 @@ dolnośląskie, Długołęka, Pasikurowice;Pasikurowice;;51.2104409;17.1051044
 dolnośląskie, Długołęka, Piecowice;Piecowice;55-093;51.1442284;17.2175821
 dolnośląskie, Długołęka, Pruszowice;Pruszowice;51-217;51.1875643;17.1341209
 dolnośląskie, Długołęka, Raków;Raków;;51.1694618;17.2779114
+dolnośląskie, Długołęka, Siedlec;Siedlec;;51.2312709;17.1153375
 dolnośląskie, Długołęka, Stępin;Stępin;;51.2133659;17.2850242
 dolnośląskie, Długołęka, Wilczyce;Wilczyce;51-361;51.1301747;17.1535304
 dolnośląskie, Długołęka, miasto Długołęka, Rzemieślnicza;;55-095;51.1787389;17.2047216
@@ -981,7 +986,9 @@ dolnośląskie, Siechnice, Sulęcin, Sulęcin Szostakowice;Sulęcin;;50.9930876;
 dolnośląskie, Siechnice, Zębice;Zębice;;51.0043512;17.1522513
 dolnośląskie, Siechnice, Święta Katarzyna;Święta Katarzyna;55-010;51.025511;17.1156829
 dolnośląskie, Siechnice, Żerniki Wrocławskie;Żerniki Wrocławskie;52-050;51.0328526;17.0569906
+dolnośląskie, Sobótka, Cisowa;;;;
 dolnośląskie, Sobótka, Mirosławice;Mirosławice;;50.9553134;16.7839001
+dolnośląskie, Sobótka, Rogów Sobócki;Rogów Sobócki;50-050;50.9260902;16.7594042
 dolnośląskie, Sobótka, Ręków;Ręków;;50.9261609;16.832861
 dolnośląskie, Sobótka, Siedlakowice;Siedlakowice;;50.96442;16.794754
 dolnośląskie, Sobótka, Sobótka;Sobótka;55-050;50.8990885;16.7445705
@@ -1054,6 +1061,7 @@ dolnośląskie, Środa Śląska, Proszków;Proszków;;51.163636;16.5367235
 dolnośląskie, Środa Śląska, Przedmoście;Przedmoście;;51.1890407;16.6665085
 dolnośląskie, Środa Śląska, Środa Śląska;Środa Śląska;55-300;51.1638967;16.5942689
 dolnośląskie, Żmigród, Korzeńsko;Korzeńsko;;51.5443129;16.8707137
+dolnośląskie, Żmigród, Książęca;Książęca Wieś;;51.4612686;17.0419715
 dolnośląskie, Żmigród, Radziądz;Radziądz;;51.5112881;16.9665743
 dolnośląskie, Żmigród, Żmigród;Żmigród;;51.4717386;16.9082719
 dolnośląskie, Żórawina, Bogunów;Bogunów;;50.9438099;17.0200806

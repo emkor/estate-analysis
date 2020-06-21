@@ -49,7 +49,7 @@ def main(db_file: str, ddl_script: str, place_cache: str, offers_path: str):
                     f"Could not insert {len(offers_chunk)} rows [{offers_chunk[0]}, ..., {offers_chunk[-1]}]: {e}")
 
     db_conn.close()
-    log.info("Done inserting Places cache and Offers into sqlite3DB")
+    log.info("Done inserting Places cache and Offers into sqlite3 DB")
 
 
 def _parse_args() -> argparse.Namespace:
