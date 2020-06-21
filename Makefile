@@ -41,6 +41,6 @@ render:
 publish:
 	@echo "---- Publishing data ----"
 	@$(PY3) src/render_gist_update_patch.py "map/map.json" "gist_update.json"
-	@curl -H 'Accept: application/vnd.github.v3+json' -H "Content-Type: application/json" -H "Authorization: token $$GITHUB_API_KEY" -d "@gist_update.json" -X 'PATCH' "https://api.github.com/gists/$$GITHUB_GIST_ID"
+	@curl -H 'Accept: application/vnd.github.v3+json' -H "Content-Type: application/json" -H "Authorization: token $$GH_API_KEY" -d "@gist_update.json" -X 'PATCH' "https://api.github.com/gists/$$GH_GIST_ID"
 
 .PHONY: setup clean venv install all dl-data analyze render publish

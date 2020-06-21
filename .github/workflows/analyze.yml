@@ -1,0 +1,41 @@
+on:
+  schedule:
+    - cron:  '25 6 * * *'
+  push:
+    branches:
+      - master
+
+env:
+  B2_KEY_ID: "001a56c121eaece0000000009"
+  B2_BUCKET: "dl-estate"
+  B2_APP_KEY: ${{ secrets.B2_APP_KEY }}
+  MAPQUEST_API_KEY: ${{ secrets.MAPQUEST_API_KEY }}
+  GH_GIST_ID: "51ce817d1bca483b3bd0532b8e00233c"
+  GH_API_KEY: ${{ secrets.GH_API_KEY }}
+
+jobs:
+  scrape:
+    runs-on: ubuntu-16.04
+    name: Scrape data
+    steps:
+      - name: Set up Python 3.8
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+      - name: Upgrade pip
+        run: python3 -m pip install --upgrade pip setuptools wheel
+        shell: bash
+      - name: Check Python version
+        run: python3 --version && python3 -m pip --version && pip list
+        shell: bash
+      - name: Check out repository
+        uses: actions/checkout@v2
+      - name: Setup virtualenv and install dependencies
+        run: make setup
+        shell: bash
+      - name: Perform analysis on data scraped and hosted on Backblaze B2
+        run: make all
+        shell: bash
+      - name: Publish to GitHub gist
+        run: make publish
+        shell: bash
