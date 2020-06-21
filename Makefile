@@ -4,6 +4,7 @@ all: dl-data analyze render
 PY3 = python
 VENV = .venv/estate-analysis
 VENV_PY3 = $(VENV)/bin/python
+VENV_B2 = $(VENV)/bin/b2
 BUCKET_CACHE_DIR = "bucket"
 DATA_DIR = "offers"
 
@@ -24,7 +25,7 @@ install:
 
 dl-data:
 	@echo "---- Downloading data ----"
-	sh dl-data.sh $(BUCKET_CACHE_DIR) $(DATA_DIR)
+	sh dl-data.sh $(VENV_B2) $(BUCKET_CACHE_DIR) $(DATA_DIR)
 
 analyze:
 	@echo "---- Analyzing data ----"
