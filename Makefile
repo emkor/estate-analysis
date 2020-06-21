@@ -25,7 +25,7 @@ install:
 
 dl-data:
 	@echo "---- Downloading data ----"
-	sh dl-data.sh $(VENV_B2) $(BUCKET_CACHE_DIR) $(DATA_DIR)
+	@bash dl-data.sh $(VENV_B2) $(BUCKET_CACHE_DIR) $(DATA_DIR)
 	@echo "Bucket cache:" && ls $(BUCKET_CACHE_DIR) | sort
 	@echo "Data cache:" && ls $(DATA_DIR) | sort
 
