@@ -59,7 +59,6 @@ def main(tgt_map: str, isochrone_map: str, debug: bool, *layers_files) -> None:
 
 def cli_main():
     args = _parse_args()
-    print(args)
     main(args.tgt, args.base, args.verbose, *tuple(args.layers))
 
 
