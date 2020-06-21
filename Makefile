@@ -26,22 +26,24 @@ install:
 dl-data:
 	@echo "---- Downloading data ----"
 	sh dl-data.sh $(VENV_B2) $(BUCKET_CACHE_DIR) $(DATA_DIR)
+	@echo "Bucket cache:" && ls $(BUCKET_CACHE_DIR) | sort
+	@echo "Data cache:" && ls $(DATA_DIR) | sort
 
 analyze:
 	@echo "---- Analyzing data ----"
-	@$(PY3) src/cache_places.py "data/place_cache.csv" $$MAPQUEST_API_KEY "offers"
+	@$(VENV_PY3) src/cache_places.py "data/place_cache.csv" $$MAPQUEST_API_KEY "offers"
 	@rm -f "data/offers.db"
-	@$(PY3) src/import_into_db.py "data/offers.db" "src/ddl.sql" "data/place_cache.csv" "offers"
-	@$(PY3) src/dump_views.py "data/offers.db" "data"
+	@$(VENV_PY3) src/import_into_db.py "data/offers.db" "src/ddl.sql" "data/place_cache.csv" "offers"
+	@$(VENV_PY3) src/dump_views.py "data/offers.db" "data"
 
 render:
 	@echo "---- Rendering data ----"
-	@$(PY3) src/city_avg_geojson.py "data/avg_city_price.csv" "data/avg_city_prices.json"
-	@$(PY3) src/render_map.py "data/isochrone_wroclaw_car_56min_7min.json" "map/map.json" "data/train_station.json" "data/mpk_stops.json" "data/avg_city_prices.json"
+	@$(VENV_PY3) src/city_avg_geojson.py "data/avg_city_price.csv" "data/avg_city_prices.json"
+	@$(VENV_PY3) src/render_map.py "data/isochrone_wroclaw_car_56min_7min.json" "map/map.json" "data/train_station.json" "data/mpk_stops.json" "data/avg_city_prices.json"
 
 publish:
 	@echo "---- Publishing data ----"
-	@$(PY3) src/render_gist_update_patch.py "map/map.json" "gist_update.json"
+	@$(VENV_PY3) src/render_gist_update_patch.py "map/map.json" "gist_update.json"
 	@curl -H 'Accept: application/vnd.github.v3+json' -H "Content-Type: application/json" -H "Authorization: token $$GH_API_KEY" -d "@gist_update.json" -X 'PATCH' "https://api.github.com/gists/$$GH_GIST_ID"
 
 .PHONY: setup clean venv install all dl-data analyze render publish
