@@ -15,6 +15,12 @@ def main(input: str, output: str):
     with open(input, "r") as in_:
         input_map = json.load(in_)
 
+    with open("data/latest_offers.csv", "r") as f_:
+        latest_offers_str = f_.read()
+
+    with open("data/daily_price_avg.csv", "r") as f_:
+        daily_price_avg = f_.read()
+
     map_as_json_str = json.dumps(input_map, ensure_ascii=False)
     with open(output, "w") as out_f:
         json.dump({
@@ -23,9 +29,17 @@ def main(input: str, output: str):
                 "parcel-map.geojson": {
                     "content": map_as_json_str,
                     "filename": "parcel-map.geojson"
+                },
+                "daily_price_avg.csv": {
+                    "content": daily_price_avg,
+                    "filename": "daily_price_avg.csv"
+                },
+                "latest_offers.csv": {
+                    "content": latest_offers_str,
+                    "filename": "latest_offers.csv"
                 }
             }
-        }, out_f)
+        }, out_f, ensure_ascii=False)
 
 
 def cli_main():
