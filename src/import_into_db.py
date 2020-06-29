@@ -37,7 +37,7 @@ def main(db_file: str, ddl_script: str, place_cache: str, offers_path: str):
 
     for offers_csv in list_csv_files(offers_path):
         log.info(f"Inserting Offers from CSV {offers_csv} into sqlite3 DB {db_file}...")
-        offers = filter(None, map(ParcelOffer.from_csv_row, read_csv(offers_csv)))
+        offers = filter(None, map(ParcelOffer.from_csv_row, read_csv(offers_csv, delimiter=';')))
         for offers_chunk in chunked(map(lambda p: p.to_sql_row(), offers), 50):
             try:
                 c = db_conn.cursor()

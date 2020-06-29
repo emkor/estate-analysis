@@ -29,6 +29,7 @@ CREATE INDEX IF NOT EXISTS postcode_ix ON place (postcode);
 CREATE VIEW IF NOT EXISTS daily_price_avg AS
 SELECT date(timestamp), round(avg(price_pln / area_m2)), count(DISTINCT ident)
 FROM parcel_offer
+WHERE area_m2 >= 800 AND area_m2 <= 3000
 GROUP BY date(timestamp)
 ORDER BY date(timestamp);
 

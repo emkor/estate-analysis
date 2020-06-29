@@ -25,15 +25,15 @@ def list_csv_files(dir_path: str) -> List[str]:
                    and path.splitext(f)[-1].lower() == ".csv"])
 
 
-def read_csv(csv_file: str) -> Generator[List[str], None, None]:
+def read_csv(csv_file: str, delimiter: str = ',') -> Generator[List[str], None, None]:
     with open(csv_file, "r") as csv_f:
-        for line in csv.reader(csv_f, delimiter=';', quotechar='"', quoting=csv.QUOTE_MINIMAL):
+        for line in csv.reader(csv_f, delimiter=delimiter, quotechar='"', quoting=csv.QUOTE_MINIMAL):
             if line:
                 yield line
 
 
-def write_csv(csv_file: str, rows: Iterable[List[str]]):
+def write_csv(csv_file: str, rows: Iterable[List[str]], delimiter: str = ','):
     with open(csv_file, "w") as csv_f:
-        writer = csv.writer(csv_f, delimiter=';', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+        writer = csv.writer(csv_f, delimiter=delimiter, quotechar='"', quoting=csv.QUOTE_MINIMAL)
         for line in chunked(rows, 20):
             writer.writerows(line)
