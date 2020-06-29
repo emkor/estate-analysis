@@ -45,6 +45,7 @@ Borzygniew, Mietków, dolnośląskie;Borzygniew;;50.971646;16.6306016
 Bratowice, Żórawina, dolnośląskie;Bratowice;;50.986497;17.1320476
 Brodowo, Środa Wielkopolska, wielkopolskie;Brodowo;;52.1899087;17.31923
 Brzezia Łąka, Długołęka, dolnośląskie;Brzezia Łąka;;51.1229492;17.2437672
+Brzezia Łąka, wrocławski, Dolnośląskie;Brzezia Łąka;;51.1229492;17.2437672
 Brzezia Łąka, wrocławski, dolnośląskie;Brzezia Łąka;;51.1229492;17.2437672
 Brzezina, Miękinia, dolnośląskie;Brzezina;;51.2018289;16.8321775
 Brzezina, średzki, Dolnośląskie;Brzezina;;51.2018289;16.8321775
@@ -62,6 +63,7 @@ Brzyków, trzebnicki, Dolnośląskie;Brzyków;;51.3549922;17.0561113
 Brzyków, trzebnicki, dolnośląskie;Brzyków;;51.3549922;17.0561113
 Budczyce, Zawonia, dolnośląskie;Budczyce;;51.3330091;17.1818463
 Budczyce, trzebnicki, dolnośląskie;Budczyce;;51.3330091;17.1818463
+Budziwojowice, wrocławski, Dolnośląskie;Budziwojowice;;51.2231485;17.187385
 Bukowice, milicki, Dolnośląskie;Bukowice;56-321;51.3961111;17.3033333
 Bukowice, milicki, dolnośląskie;Bukowice;56-321;51.3961111;17.3033333
 Bukowice, wołowski, Dolnośląskie;Bukowice;;51.30627;16.775808
@@ -79,6 +81,7 @@ Chmielów, Kostomłoty, dolnośląskie;Chmielów;;51.0714236;16.741181
 Chodlewko, trzebnicki, dolnośląskie;Chodlewko;;51.3784724;16.8771353
 Chodlweska, Korzeńsko, trzebnicki, dolnośląskie;Korzeńsko;;51.5443129;16.8707137
 Chrząstawa Mała, Czernica, dolnośląskie;Chrząstawa Mała;;51.081932;17.281738
+Chrząstawa Mała, wrocławski, Dolnośląskie;Chrząstawa Mała;;51.081932;17.281738
 Chrząstawa Mała, wrocławski, dolnośląskie;Chrząstawa Mała;;51.081932;17.281738
 Chrząstawa Wielka, Czernica, dolnośląskie;Chrząstawa Wielka;55-001;51.0948751;17.2982583
 Chrząstawa Wielka, wrocławski, Dolnośląskie;Chrząstawa Wielka;55-001;51.0948751;17.2982583
@@ -192,6 +195,7 @@ Jary, Oborniki Śląskie, dolnośląskie;Jary;;51.2839213;16.8666076
 Jary, trzebnicki, Dolnośląskie;Jary;;51.2839213;16.8666076
 Jary, trzebnicki, dolnośląskie;Jary;;51.2839213;16.8666076
 Jarząbkowice, Jarząbkowice, średzki, dolnośląskie;Jarząbkowice;;51.102855;16.7645656
+Jarząbkowice, średzki, Dolnośląskie;Jarząbkowice;;51.102855;16.7645656
 Jaszkowo, Zaniemyśl, wielkopolskie;Jaszkowo;;52.2138868;17.1701546
 Jaszowice, Kobierzyce, dolnośląskie;Jaszowice;;50.9177599;16.8949315
 Jaśminowa 2, Borowa, wrocławski, dolnośląskie;Borowa;;51.1905872;17.2800031
@@ -260,12 +264,14 @@ Krzeczyn, Oleśnica, dolnośląskie;Krzeczyn;;51.1515661;17.3357155
 Krzeczyn, oleśnicki, Dolnośląskie;Krzeczyn;;51.1515661;17.3357155
 Krzeczyn, oleśnicki, dolnośląskie;Krzeczyn;;51.1515661;17.3357155
 Krzeptów, wrocławski, Dolnośląskie;Krzeptów;;51.0911241;16.8862309
+Krzeptów, wrocławski, dolnośląskie;Krzeptów;;51.0911241;16.8862309
 Krzykowska, Dobrzykowice, wrocławski, dolnośląskie;Dobrzykowice;;51.093811;17.190866
 Krzyków, Czernica, dolnośląskie;Krzyków;;51.1007749;17.2205975
 Krzyków, wrocławski, Dolnośląskie;Krzyków;;51.1007749;17.2205975
 Krzyków, wrocławski, dolnośląskie;Krzyków;;51.1007749;17.2205975
 Krzyżanowice, trzebnicki, Dolnośląskie;Krzyżanowice;;51.17417;17.0486879
 Krzyżanowice, trzebnicki, dolnośląskie;Krzyżanowice;;51.17417;17.0486879
+Krótka, Chwałowice, oławski, dolnośląskie;Chwałowice;;51.0446926;17.3833423
 Krępice, Krępice, średzki, dolnośląskie;Krępice;;51.162246;16.812383
 Krępice, Miękinia, dolnośląskie;Krępice;;51.162246;16.812383
 Krępice, średzki, Dolnośląskie;Krępice;;51.162246;16.812383
@@ -399,6 +405,7 @@ Okolice Wrocławia. Wilkszyn, Wrocław, dolnośląskie;;;;
 Oleśnica, dolnośląskie;Oleśnica;56-400;51.2095314;17.3804559
 Oleśnica, oleśnicki, Dolnośląskie, Lucień;Oleśnica;56-400;51.2095314;17.3804559
 Oleśnica, oleśnicki, Dolnośląskie, Oleśnica;Oleśnica;56-400;51.2095314;17.3804559
+Oleśnica, oleśnicki, Dolnośląskie, Rataje;;;51.22132555;17.3752807626042
 Oleśnica, oleśnicki, dolnośląskie;Oleśnica;56-400;51.2095314;17.3804559
 Oleśniczka, Długołęka, dolnośląskie;Oleśniczka;;51.1469694;17.2804047
 Oleśniczka, wrocławski, Dolnośląskie;Oleśniczka;;51.1469694;17.2804047
@@ -406,6 +413,7 @@ Oleśniczka, wrocławski, dolnośląskie;Oleśniczka;;51.1469694;17.2804047
 Osiek Mały, trzebnicki, Dolnośląskie;Osiek Mały;55-140;51.4637712;16.9844401
 Osiek, trzebnicki, Dolnośląskie;Osiek;;51.4723553;16.987251
 Osola, Oborniki Śląskie, dolnośląskie;Osola;;51.3353945;16.8662611
+Osola, trzebnicki, dolnośląskie;Osola;;51.3353945;16.8662611
 Osolin - 900m km od stacji PKP, Osolin, trzebnicki, dolnośląskie;Osolin;;51.3423726;16.8467905
 Osolin, Oborniki Śląskie, dolnośląskie;Osolin;;51.3423726;16.8467905
 Osolin, trzebnicki, Dolnośląskie;Osolin;;51.3423726;16.8467905
@@ -494,6 +502,7 @@ Raków, Długołęka, dolnośląskie;Raków;;51.1694618;17.2779114
 Raków, wrocławski, Dolnośląskie;Raków;;51.1694618;17.2779114
 Raków, wrocławski, dolnośląskie;Raków;;51.1694618;17.2779114
 Ramiszów, wrocławski, Dolnośląskie;Ramiszów;;51.1903658;17.1026693
+Ramiszów, wrocławski, dolnośląskie;Ramiszów;;51.1903658;17.1026693
 Ramułtowice, Kostomłoty, dolnośląskie;Ramułtowice;;51.095001;16.726766
 Ramułtowice, średzki, Dolnośląskie;Ramułtowice;;51.095001;16.726766
 Ramułtowice, średzki, dolnośląskie;Ramułtowice;;51.095001;16.726766
@@ -693,6 +702,7 @@ Wrocław, Psie Pole;Wrocław;51-313;51.1459988;17.114733
 Wrocław, Psie Pole, Karłowice;Wrocław;51-146;51.1374526;17.0567506
 Wrocław, Psie Pole, Kowale, ul. Ełcka;Wrocław;51-411;51.1366424;17.0814813651007
 Wrocław, Psie Pole, Lipa Piotrowska;;;;
+Wrocław, Psie Pole, Lipa Piotrowska, Szewce, ul. Polna;;;;
 Wrocław, Psie Pole, Osobowice, osobowice;;;;
 Wrocław, Psie Pole, Pawłowice;Wrocław;51-378;51.1752889;17.0854669
 Wrocław, Psie Pole, Pawłowice, ul. Starodębowa;Wrocław;51-378;51.1752889;17.0854669
@@ -741,6 +751,7 @@ Zbożowa, Łany, wrocławski, dolnośląskie;Łany;;51.0833919;17.1588279
 Zbytowa, Bierutów, dolnośląskie;Zbytowa;;51.114837;17.42871
 Zbytowa, Ligota Mała, oleśnicki, dolnośląskie;Ligota Mała;;51.1360089;17.3638012
 Zielona Wieś, rawicki, Wielkopolskie;;63-900;51.5690985;16.9463252
+Zielona Wieś, rawicki, wielkopolskie;;63-900;51.5690985;16.9463252
 Zimnica, Oleśnica, dolnośląskie;Zimnica;;51.1551741;17.3881733
 Zimnica, oleśnicki, dolnośląskie;Zimnica;;51.1551741;17.3881733
 Zwola, Zaniemyśl, wielkopolskie;Zwola;;52.1448299;17.1594969
@@ -760,8 +771,10 @@ dolnośląskie, Czernica, Czernica Dobrzykowice, Krzykowska;Dobrzykowice;;51.093
 dolnośląskie, Czernica, Czernica Dobrzykowice, Lawendowa;Dobrzykowice;;51.093811;17.190866
 dolnośląskie, Czernica, Czernica Dobrzykowice, Wrocławska;Dobrzykowice;;51.093811;17.190866
 dolnośląskie, Czernica, Czernica Gajków, Wrocławska;Gajków;;51.0581885;17.1865315
+dolnośląskie, Czernica, Czernica Krzyków, Jarzębinowa;Krzyków;;51.1007749;17.2205975
 dolnośląskie, Czernica, Czernica Nadolice Wielkie, Myśliwska;Nadolice Wielkie;55-03;51.0845173;17.2367799
 dolnośląskie, Czernica, Czernica Nadolice Wielkie, Stawowa;Nadolice Wielkie;55-03;51.0845173;17.2367799
+dolnośląskie, Czernica, Czernica Nadolice Wielkie, Wrocławska;Nadolice Wielkie;55-03;51.0845173;17.2367799
 dolnośląskie, Czernica, Czernica Łany, Zbożowa;Łany;;51.0833919;17.1588279
 dolnośląskie, Czernica, Czernica Łany, Łany;Łany;;51.0833919;17.1588279
 dolnośląskie, Czernica, Dobrzykowice;Dobrzykowice;;51.093811;17.190866
@@ -819,8 +832,10 @@ dolnośląskie, Długołęka, Raków;Raków;;51.1694618;17.2779114
 dolnośląskie, Długołęka, Siedlec;Siedlec;;51.2312709;17.1153375
 dolnośląskie, Długołęka, Stępin;Stępin;;51.2133659;17.2850242
 dolnośląskie, Długołęka, Wilczyce;Wilczyce;51-361;51.1301747;17.1535304
+dolnośląskie, Długołęka, Węgrów;Węgrów;;51.2649091;17.2199531
 dolnośląskie, Długołęka, miasto Długołęka, Rzemieślnicza;;55-095;51.1787389;17.2047216
 dolnośląskie, Długołęka, wrocławski, Krokusowa;Długołęka;;51.1743484;17.1933513
+dolnośląskie, Długołęka, wrocławski, Wrocławska;Długołęka;;51.1743484;17.1933513
 dolnośląskie, Długołęka, Łozina;Łozina;;51.2329899;17.1749245
 dolnośląskie, Jelcz-Laskowice, Grędzina;Grędzina;;51.091838;17.409666
 dolnośląskie, Jordanów Śląski, Glinica;Glinica;;50.859813;16.837785
@@ -891,6 +906,7 @@ dolnośląskie, Międzybórz;Międzybórz;56-413;51.397711;17.6650165
 dolnośląskie, Międzybórz, Kraszów;Kraszów;;51.3827991;17.6851825
 dolnośląskie, Miękinia;;32-065;50.1434726;19.6305204
 dolnośląskie, Miękinia, Brzezina;Brzezina;;51.2018289;16.8321775
+dolnośląskie, Miękinia, Brzezinka Średzka;Brzezinka Średzka;;51.2152266;16.8228416
 dolnośląskie, Miękinia, Błonie;Błonie;;51.1597124;16.7500495
 dolnośląskie, Miękinia, Gałów;Gałów;;51.1111189;16.8145917
 dolnośląskie, Miękinia, Kadłub;Kadłub;;51.173811;16.6962107
@@ -899,6 +915,7 @@ dolnośląskie, Miękinia, Księginice;Księginice;;51.2390465;16.7621483
 dolnośląskie, Miękinia, Lutynia;Lutynia;;51.1338357;16.787684
 dolnośląskie, Miękinia, Miękinia;Miękinia;32-065;51.190964;16.738685
 dolnośląskie, Miękinia, Miękinia Brzezina, Brzezina;Brzezina;;51.2018289;16.8321775
+dolnośląskie, Miękinia, Miękinia Gałów, Parkowa;Gałów;;51.1111189;16.8145917
 dolnośląskie, Miękinia, Miękinia Krępice, Średzka;Krępice;;51.162246;16.812383
 dolnośląskie, Miękinia, Miękinia Lutynia, Nowa;Lutynia;;51.1338357;16.787684
 dolnośląskie, Miękinia, Miękinia Mrozów, Mrozów;Mrozów;55-330;51.1878008;16.7894423
@@ -977,6 +994,7 @@ dolnośląskie, Siechnice, Siechnice Groblice, Łąkowa;Groblice;;51.0126304;17.
 dolnośląskie, Siechnice, Siechnice Iwiny, Chabrowa;Iwiny;52-116;51.0425189;17.074719
 dolnośląskie, Siechnice, Siechnice Kotowice, Leśna;Kotowice;;51.0239216;17.229882
 dolnośląskie, Siechnice, Siechnice Kotowice, Podwalna;Kotowice;;51.0239216;17.229882
+dolnośląskie, Siechnice, Siechnice Radomierzyce, Piaskowa;Radomierzyce;;51.0433533;17.040789
 dolnośląskie, Siechnice, Siechnice Radomierzyce, Wrocławska;Radomierzyce;;51.0433533;17.040789
 dolnośląskie, Siechnice, Siechnice Radwanice, Graniczna;Radwanice;;51.0574994;17.106757
 dolnośląskie, Siechnice, Siechnice Święta Katarzyna, Topolowa;Święta Katarzyna;55-010;51.025511;17.1156829
@@ -1036,6 +1054,7 @@ dolnośląskie, Wisznia Mała, Wisznia Mała Kryniczno, Trzebnicka;;55-114;51.21
 dolnośląskie, Wisznia Mała, Wisznia Mała Ligota Piękna, Brzoskwiniowa;Ligota Piękna;55-114;51.2327723;17.0454379
 dolnośląskie, Wisznia Mała, Wisznia Mała Malin, Główna;Malin;;51.2172483;17.0622972
 dolnośląskie, Wisznia Mała, Wisznia Mała Malin, Malin;Malin;;51.2172483;17.0622972
+dolnośląskie, Wisznia Mała, Wisznia Mała Malin, Tenisowa;Malin;;51.2172483;17.0622972
 dolnośląskie, Wisznia Mała, Wisznia Mała Ozorowice, Osiedlowa;Ozorowice;;51.2378538;16.9798831
 dolnośląskie, Wisznia Mała, Wisznia Mała Ozorowice, Sportowa;Ozorowice;;51.2378538;16.9798831
 dolnośląskie, Wisznia Mała, Wisznia Mała Psary, Parkowa;Psary;51-188;51.1873358;17.0320313
@@ -1057,6 +1076,7 @@ dolnośląskie, Środa Śląska, Juszczyn;Juszczyn;;51.154941;16.679306
 dolnośląskie, Środa Śląska, Kobylniki;Kobylniki;;51.2270153;16.6747773
 dolnośląskie, Środa Śląska, Komorniki;Komorniki;;51.1648779;16.6300488
 dolnośląskie, Środa Śląska, Kryniczno;Kryniczno;;51.1301509;16.6699045
+dolnośląskie, Środa Śląska, Kulin;Kulin;;51.1029688;16.6070502
 dolnośląskie, Środa Śląska, Proszków;Proszków;;51.163636;16.5367235
 dolnośląskie, Środa Śląska, Przedmoście;Przedmoście;;51.1890407;16.6665085
 dolnośląskie, Środa Śląska, Środa Śląska;Środa Śląska;55-300;51.1638967;16.5942689
@@ -1072,6 +1092,7 @@ dolnośląskie, Żórawina, Karwiany;Karwiany;;51.0205164;17.0101098
 dolnośląskie, Żórawina, Milejowice;Milejowice;;50.9635095;17.0914924
 dolnośląskie, Żórawina, Mnichowice;Mnichowice;;50.982086;17.0908727
 dolnośląskie, Żórawina, Mędłów;Mędłów;;51.0051446;17.0471112
+dolnośląskie, Żórawina, Nowojowice;Nowojowice;;50.9125464;17.0657323
 dolnośląskie, Żórawina, Nowy Śleszów;Nowy Śleszów;;50.933417;17.107106
 dolnośląskie, Żórawina, Racławice Małe;Racławice Małe;;50.926443;17.0897787
 dolnośląskie, Żórawina, Stary Śleszów;Stary Śleszów;;50.9343773;17.0758945
@@ -1108,11 +1129,14 @@ ul. Główna, Krzeptów, wrocławski, dolnośląskie;Krzeptów;;51.0911241;16.88
 ul. Główna, Psary, trzebnicki, dolnośląskie;Psary;51-188;51.1873358;17.0320313
 ul. Jagodowa, Dębno Polskie, rawicki, wielkopolskie;;63-900;51.58506;16.88105
 ul. Jagodowa, Mrozów, średzki, dolnośląskie;Mrozów;55-330;51.1878008;16.7894423
+ul. Jaśminowa, Krzyżanowice, trzebnicki, dolnośląskie;Krzyżanowice;;51.17417;17.0486879
 ul. Jaśminowa, Lutynia, średzki, dolnośląskie;Lutynia;;52.1010434;17.506167
 ul. Kasztanowa 2, Januszkowice, wrocławski, dolnośląskie;Januszkowice;;51.2218167;17.2403388
 ul. Kasztanowa 4, Januszkowice, wrocławski, dolnośląskie;Januszkowice;;51.2218167;17.2403388
 ul. Klonowa, Januszkowice, wrocławski, dolnośląskie;Januszkowice;;51.2218167;17.2403388
 ul. Lawendowa, Smolec, wrocławski, dolnośląskie;Smolec;;51.0747049;16.8839452
+ul. Leśna, Dobrzykowice, wrocławski, dolnośląskie;Dobrzykowice;;51.093811;17.190866
+ul. Leśna, Krępice, średzki, dolnośląskie;Krępice;;51.162246;16.812383
 ul. Leśna, Pierwoszów, trzebnicki, dolnośląskie;Pierwoszów;;51.2493843;17.0773822
 ul. Liliowa, Szewce, trzebnicki, dolnośląskie;Szewce;;51.2214868;16.9702776
 ul. Lipowa, Nadolice Wielkie, wrocławski, dolnośląskie;Nadolice Wielkie;55-03;51.0845173;17.2367799
@@ -1152,6 +1176,7 @@ wielkopolskie, Krzykosy, Sulęcinek;Sulęcinek;63-023;52.1370616;17.3087457
 wielkopolskie, Nowe Miasto nad Wartą;Nowe Miasto nad Wartą;;52.0899632;17.4115406
 wielkopolskie, Nowe Miasto nad Wartą, Kruczyn;;;;
 wielkopolskie, Nowe Miasto nad Wartą, Utrata;;;;
+wielkopolskie, Nowe Miasto nad Wartą, średzki, Utrata;Nowe Miasto nad Wartą;;52.0899632;17.4115406
 wielkopolskie, Zaniemyśl, Jaszkowo;Jaszkowo;;52.2138868;17.1701546
 wielkopolskie, Zaniemyśl, Jeziory Małe;Jeziory Małe;;52.1673647;17.1484796
 wielkopolskie, Zaniemyśl, Lubonieczek;Lubonieczek;;52.1438431;17.1963247
@@ -1162,6 +1187,7 @@ wielkopolskie, Środa Wielkopolska, Annopol;;;;
 wielkopolskie, Środa Wielkopolska, Brodowo;Brodowo;;52.1899087;17.31923
 wielkopolskie, Środa Wielkopolska, Czarne Piątkowo;Czarne Piątkowo;;52.1946058;17.4009068
 wielkopolskie, Środa Wielkopolska, Kijewo;Kijewo;;52.2074636;17.2817849
+wielkopolskie, Środa Wielkopolska, Topola;Topola;;52.2467485;17.2447511
 wielkopolskie, Środa Wielkopolska, Trzebisławki;Trzebisławki;;52.2476771;17.1389356
 wielkopolskie, Środa Wielkopolska, miasto Środa Wielkopolska, Paderewskiego;;63-000;52.2278395;17.2690194
 wielkopolskie, Środa Wielkopolska, miasto Środa Wielkopolska, Strzelecka;;63-000;52.2403787;17.273819
