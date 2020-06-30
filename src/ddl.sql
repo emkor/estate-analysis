@@ -27,7 +27,7 @@ CREATE INDEX IF NOT EXISTS city_ix ON place (city);
 CREATE INDEX IF NOT EXISTS postcode_ix ON place (postcode);
 
 CREATE VIEW IF NOT EXISTS daily_price_avg AS
-SELECT date(timestamp), round(avg(price_pln / area_m2)), count(DISTINCT ident)
+SELECT date(timestamp) AS "Date", round(avg(price_pln / area_m2)) AS "PricePerM2", count(DISTINCT ident) AS "OfferCount"
 FROM parcel_offer
 WHERE area_m2 >= 800 AND area_m2 <= 3000
 GROUP BY date(timestamp)
@@ -70,11 +70,11 @@ GROUP BY o.url
 ORDER BY min(p.city), round(min(o.price_pln) / min(o.area_m2));
 
 CREATE VIEW IF NOT EXISTS "avg_city_price" AS
-SELECT city,
+SELECT city AS "City",
        round(avg(price_pln / area_m2)) AS "AvgPricePerM2",
-       min(lat)                        AS "lat",
-       min(lon)                        AS "lon",
-       count(url)                      AS "count"
+       count(url)                      AS "OfferCount",
+       min(lat)                        AS "Lat",
+       min(lon)                        AS "Lon"
 FROM (SELECT url,
              min(ident)     "ident",
              max(timestamp) "timestamp",
