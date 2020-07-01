@@ -22,7 +22,7 @@
 "Biedaszków Wielki, Trzebnica, dolnośląskie",Biedaszków Wielki,,51.4012042,17.1370818
 "Biedaszków Wielki, trzebnicki, Dolnośląskie",Biedaszków Wielki,,51.4012042,17.1370818
 "Biedaszków Wielki, trzebnicki, dolnośląskie",Biedaszków Wielki,,51.4012042,17.1370818
-"Bielany Wrocławskie, Kobierzyce, dolnośląskie",,55-041,51.0305128,16.939379
+"Bielany Wrocławskie, Kobierzyce, dolnośląskie",Kobierzyce,55-041,50.9720586,16.9298119
 "Bielany Wrocławskie, wrocławski, dolnośląskie",Bielany Wrocławskie,55-077,51.03656,16.969463
 "Bielawa, Długołęka, dolnośląskie",Bielawa,,51.1603102,17.2522922
 "Bielawa, wrocławski, dolnośląskie",Bielawa,,51.1603102,17.2522922
@@ -93,16 +93,16 @@
 "Cieśle, oleśnicki, Dolnośląskie",Cieśle,,51.22489,17.47031
 "Cieśle, oleśnicki, dolnośląskie",Cieśle,,51.22489,17.47031
 "Czarne Piątkowo, Środa Wielkopolska, wielkopolskie",Czarne Piątkowo,,52.1946058,17.4009068
-"Czernica, dolnośląskie",,77-330,53.6848096,16.9378653
+"Czernica, dolnośląskie",Czernica,,51.046389,17.243889
 "Czeszów, Zawonia, dolnośląskie",Czeszów,,51.3797685,17.245644
 "Czeszów, trzebnicki, dolnośląskie",Czeszów,,51.3797685,17.245644
 "Diamentowa, Kamień, wrocławski, dolnośląskie",Kamień,,51.1662532,17.2183163
 "Diamentowa, Oleśnica, dolnośląskie",,,,
-"Dobra, Dobra, oleśnicki, dolnośląskie",,56-410,51.2674838,17.3296342
-"Dobra, Dobroszyce, dolnośląskie",,56-410,51.2674838,17.3296342
-"Dobra, Oleśnica, oleśnicki, dolnośląskie",Oleśnica,56-400,51.2095314,17.3804559
-"Dobra, oleśnicki, Dolnośląskie",,56-410,51.2674838,17.3296342
-"Dobra, oleśnicki, dolnośląskie",,56-410,51.2674838,17.3296342
+"Dobra, Dobra, oleśnicki, dolnośląskie",Dobra,56-410,51.23583,17.30418
+"Dobra, Dobroszyce, dolnośląskie",Dobra,56-410,51.23583,17.30418
+"Dobra, Oleśnica, oleśnicki, dolnośląskie",Dobra,56-410,51.23583,17.30418
+"Dobra, oleśnicki, Dolnośląskie",Dobra,56-410,51.23583,17.30418
+"Dobra, oleśnicki, dolnośląskie",Dobra,56-410,51.23583,17.30418
 "Dobroszyce, dolnośląskie",Dobroszyce,,51.26554,17.34535
 "Dobroszyce, oleśnicki, Dolnośląskie",Dobroszyce,,51.26554,17.34535
 "Dobroszyce, oleśnicki, dolnośląskie",Dobroszyce,,51.26554,17.34535
@@ -141,7 +141,7 @@ Działki przy granicy Osolina, obok las., Osolin, trzebnicki, dolnośląskie;;;;
 "Dębno Polskie, rawicki, wielkopolskie",,63-900,51.58506,16.88105
 "Dębno, Dębno, trzebnicki, dolnośląskie",Dębno,,51.5582349,16.8931013
 "Dębno, trzebnicki, Dolnośląskie",Dębno,,51.5582349,16.8931013
-"Długołęka, dolnośląskie",,,51.6759608,17.2029228
+"Długołęka, dolnośląskie",Długołęka,,51.1743484,17.1933513
 "Długołęka, wrocławski, Dolnośląskie",Długołęka,,51.1743484,17.1933513
 "Długołęka, wrocławski, dolnośląskie",Długołęka,,51.1743484,17.1933513
 "Fiołkowa, Bogdaszowice, wrocławski, dolnośląskie",Bogdaszowice,,51.085896,16.78349
@@ -254,10 +254,10 @@ GMINA OLEŚNICA , ATRAKCYJNA LOKALIZACJA, Nieciszów, oleśnicki, dolnośląskie
 "Krościna Mała, trzebnicki, Dolnośląskie",Krościna Mała,,51.3749445,16.9436101
 "Krośnice, milicki, Dolnośląskie",,56-320,51.4747222,17.38
 "Kruczyn, Nowe Miasto nad Wartą, wielkopolskie",,,,
-"Kryniczno, Wisznia Mała, dolnośląskie",,55-114,51.2169821,17.0397203
-"Kryniczno, trzebnicki, Dolnośląskie",Kryniczno,,51.2074747,17.0394225
-"Kryniczno, trzebnicki, dolnośląskie",Kryniczno,,51.2074747,17.0394225
-"Kryniczno, Środa Śląska, dolnośląskie",Kryniczno,,51.1301509,16.6699045
+"Kryniczno, Wisznia Mała, dolnośląskie",Kryniczno,55-114,51.2074747,17.0394225
+"Kryniczno, trzebnicki, Dolnośląskie",Kryniczno,55-114,51.2074747,17.0394225
+"Kryniczno, trzebnicki, dolnośląskie",Kryniczno,55-114,51.2074747,17.0394225
+"Kryniczno, Środa Śląska, dolnośląskie",Kryniczno,55-114,51.1301509,16.6699045
 "Krzeczyn, Oleśnica, dolnośląskie",Krzeczyn,,51.1515661,17.3357155
 "Krzeczyn, oleśnicki, Dolnośląskie",Krzeczyn,,51.1515661,17.3357155
 "Krzeczyn, oleśnicki, dolnośląskie",Krzeczyn,,51.1515661,17.3357155
@@ -338,12 +338,12 @@ GMINA OLEŚNICA , ATRAKCYJNA LOKALIZACJA, Nieciszów, oleśnicki, dolnośląskie
 "Milicz, milicki, Dolnośląskie",Milicz,56-300,51.5306022,17.2726447
 "Milicz, milicki, dolnośląskie",Milicz,56-300,51.5306022,17.2726447
 "Milin, Mietków, dolnośląskie",Milin,,50.977512,16.698375
-"Miodary, Dobroszyce, dolnośląskie",,,51.2711372,17.398156274757
-"Miodary, oleśnicki, Dolnośląskie",,,51.2711372,17.398156274757
+"Miodary, Dobroszyce, dolnośląskie",Miodary,,51.271137,17.398156
+"Miodary, oleśnicki, Dolnośląskie",Miodary,,51.271137,17.398156
 "Mirków, Długołęka, dolnośląskie",Mirków,,51.1662782,17.1588597
 "Mirków, wrocławski, dolnośląskie",Mirków,,51.1662782,17.1588597
 "Mirosławice, Sobótka, dolnośląskie",Mirosławice,,50.9553134,16.7839001
-"Miękinia, dolnośląskie",,32-065,50.1434726,19.6305204
+"Miękinia, dolnośląskie",Miękinia,32-065,50.1434726,19.6305204
 "Miękinia, średzki, Dolnośląskie",Miękinia,,51.190964,16.7386851
 "Miękinia, średzki, dolnośląskie",Miękinia,,51.190964,16.7386851
 "Miłonowice, Zawonia, dolnośląskie",Miłonowice,,51.2766696,17.2112848
@@ -399,9 +399,9 @@ Nowa cena! Gmina Zawonia, działki budowlane od 1000 m2, Zawonia, trzebnicki, do
 "Okolice Wrocławia. Wilkszyn, Wilkszyn, średzki, dolnośląskie",Wilkszyn,,51.1912884,16.8652332
 "Okolice Wrocławia. Wilkszyn, Wrocław, dolnośląskie",,,,
 "Oleśnica, dolnośląskie",Oleśnica,56-400,51.2095314,17.3804559
-"Oleśnica, oleśnicki, Dolnośląskie, Lucień",,,51.2001542,17.3545049
+"Oleśnica, oleśnicki, Dolnośląskie, Lucień",Oleśnica,,51.2001542,17.3545049
 "Oleśnica, oleśnicki, Dolnośląskie, Oleśnica",Oleśnica,56-400,51.2095314,17.3804559
-"Oleśnica, oleśnicki, Dolnośląskie, Rataje",,,51.22132555,17.3752807626042
+"Oleśnica, oleśnicki, Dolnośląskie, Rataje",Oleśnica,,51.22132555,17.3752807626042
 "Oleśnica, oleśnicki, dolnośląskie",Oleśnica,56-400,51.2095314,17.3804559
 "Oleśniczka, Długołęka, dolnośląskie",Oleśniczka,,51.1469694,17.2804047
 "Oleśniczka, wrocławski, Dolnośląskie",Oleśniczka,,51.1469694,17.2804047
@@ -540,7 +540,7 @@ Nowa cena! Gmina Zawonia, działki budowlane od 1000 m2, Zawonia, trzebnicki, do
 "Smolec, Smolec, wrocławski, dolnośląskie",Smolec,,51.0747049,16.8839452
 "Smolec, gm. Kąty Wrocławskie, wrocławski, Dolnośląskie",Smolec,,51.0747049,16.8839452
 "Smolec, wrocławski, dolnośląskie",Smolec,,51.0747049,16.8839452
-"Smolna, oleśnicki, dolnośląskie",,56-420,51.1555465,17.5202779
+"Smolna, oleśnicki, dolnośląskie",Smolna,,51.166548,17.442724
 "Sobótka, dolnośląskie",Sobótka,55-050,50.8990885,16.7445705
 "Sokołowice, Oleśnica, dolnośląskie",Sokołowice,,51.24327,17.44625
 "Sokołowice, oleśnicki, Dolnośląskie",Sokołowice,,51.24327,17.44625
@@ -650,14 +650,14 @@ Nowa cena! Gmina Zawonia, działki budowlane od 1000 m2, Zawonia, trzebnicki, do
 "Wojczyce, średzki, dolnośląskie",Wojczyce,,51.1413889,16.6852778
 "Wojkowice, Żórawina, dolnośląskie",Wojkowice,,50.9801671,17.068649
 "Wojnowice, Czernica, dolnośląskie",Wojnowice,55-003,51.0640207,17.2560587
-"Wojnowice, Miękinia, dolnośląskie",,55-330,51.2031006,16.7957235
+"Wojnowice, Miękinia, dolnośląskie",Wojnowice,55-003,51.0640207,17.2560587
 "Wojnowice, średzki, dolnośląskie",,55-330,51.2031006,16.7957235
 "Wołów, wołowski, Dolnośląskie",Wołów,56-100,51.3375098,16.639015
 "Wrocław, Dolnośląskie, Fabryczna",Legnica,,51.20957155,16.1495090105608
 "Wrocław, Dolnośląskie, Krzyki",Wrocław,53-017,51.0711937,17.0043425
 "Wrocław, Dolnośląskie, Psie Pole",Wrocław,51-313,51.1459988,17.114733
 "Wrocław, Dolnośląskie, Stare Miasto",Wrocław,50-150,51.1107328,17.0366346
-"Wrocław, Dolnośląskie, Śródmieście",,58-160,50.8521649,16.3217688396332
+"Wrocław, Dolnośląskie, Śródmieście",Wrocław,50-150,51.1107328,17.0366346
 "Wrocław, Fabryczna",Wrocław,53-609,51.1123202,16.9849992
 "Wrocław, Fabryczna, Jerzmanowo",,,,
 "Wrocław, Fabryczna, Jerzmanowo, ul. Gałowska",,,,
@@ -750,9 +750,9 @@ Nowa cena! Gmina Zawonia, działki budowlane od 1000 m2, Zawonia, trzebnicki, do
 "Zimnica, oleśnicki, dolnośląskie",Zimnica,,51.1551741,17.3881733
 "Zwola, Zaniemyśl, wielkopolskie",Zwola,,52.1448299,17.1594969
 "Zębice, Siechnice, dolnośląskie",Zębice,,51.0043512,17.1522513
-"Złotów, Zawonia, dolnośląskie",,55-106,51.35638,17.28252
-"Złotów, trzebnicki, Dolnośląskie",,55-106,51.35638,17.28252
-"Złotów, trzebnicki, dolnośląskie",,55-106,51.35638,17.28252
+"Złotów, Zawonia, dolnośląskie",Złotów,55-106,51.35638,17.28252
+"Złotów, trzebnicki, Dolnośląskie",Złotów,55-106,51.35638,17.28252
+"Złotów, trzebnicki, dolnośląskie",Złotów,55-106,51.35638,17.28252
 "al. Brzozowa, Ligota Piękna, trzebnicki, dolnośląskie",Ligota Piękna,55-114,51.2327723,17.0454379
 "al. Sosnowa 35, Ligota Piękna, trzebnicki, dolnośląskie",Ligota Piękna,55-114,51.2327723,17.0454379
 "dolnośląskie, Bierutów, Karwiniec",,,51.121313,17.5440991668836
@@ -760,7 +760,7 @@ Nowa cena! Gmina Zawonia, działki budowlane od 1000 m2, Zawonia, trzebnicki, do
 "dolnośląskie, Bierutów, oleśnicki, Rynek",Bierutów,56-420,51.125871,17.5437303
 "dolnośląskie, Czernica, Chrząstawa Mała",Chrząstawa Mała,,51.081932,17.281738
 "dolnośląskie, Czernica, Chrząstawa Wielka",Chrząstawa Wielka,55-001,51.0948751,17.2982583
-"dolnośląskie, Czernica, Czernica",,77-330,53.6848096,16.9378653
+"dolnośląskie, Czernica, Czernica",Czernica,,51.046389,17.243889
 "dolnośląskie, Czernica, Czernica Dobrzykowice, Krzykowska",Dobrzykowice,,51.093811,17.190866
 "dolnośląskie, Czernica, Czernica Dobrzykowice, Lawendowa",Dobrzykowice,,51.093811,17.190866
 "dolnośląskie, Czernica, Czernica Dobrzykowice, Wrocławska",Dobrzykowice,,51.093811,17.190866
@@ -1229,8 +1229,8 @@ Nowa cena! Gmina Zawonia, działki budowlane od 1000 m2, Zawonia, trzebnicki, do
 "Żmigród, trzebnicki, Dolnośląskie",Żmigród,,51.4717386,16.9082719
 "Żmigród, trzebnicki, dolnośląskie",Żmigród,,51.4717386,16.9082719
 "Żmigródek, trzebnicki, Dolnośląskie",Żmigródek,55-140,51.486014,16.915811
-"Żurawiniec, Krępice, średzki, dolnośląskie",Krępice,,51.162246,16.812383
-"Żurawiniec, Miękinia, dolnośląskie",,55-330,51.1755488,16.8146192
-"Żurawiniec, średzki, Dolnośląskie",,55-330,51.1755488,16.8146192
-"Żurawiniec, średzki, dolnośląskie",,55-330,51.1755488,16.8146192
+"Żurawiniec, Krępice, średzki, dolnośląskie",Żurawiniec,,51.175549,16.814619
+"Żurawiniec, Miękinia, dolnośląskie",Żurawiniec,,51.175549,16.814619
+"Żurawiniec, średzki, Dolnośląskie",Żurawiniec,,51.175549,16.814619
+"Żurawiniec, średzki, dolnośląskie",Żurawiniec,,51.175549,16.814619
 "Żórawina, dolnośląskie",Żórawina,55-020,50.9801213,17.0405147
