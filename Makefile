@@ -38,7 +38,7 @@ analyze:
 
 render:
 	@echo "---- Rendering data ----"
-	@$(VENV_PY3) src/city_avg_geojson.py "data/avg_city_price.csv" "data/avg_city_prices.json"
+	@$(VENV_PY3) src/city_avg_geojson.py "data/avg_city_price.csv" "data/avg_city_prices.json" --headers
 	@$(VENV_PY3) src/render_map.py "data/isochrone_wroclaw_car_56min_7min.json" "parcel-map.json" "data/train_station.json" "data/mpk_stops.json" "data/avg_city_prices.json"
 
 publish:

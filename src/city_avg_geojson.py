@@ -56,11 +56,14 @@ def render_geojson(features: List[Dict[str, Any]], output_file: str) -> None:
         json.dump({"type": "FeatureCollection", "features": features}, f_, ensure_ascii=False, indent=2)
 
 
-def main(avg_city_prices_csv: str, output_geojson: str) -> None:
+def main(avg_city_prices_csv: str, output_geojson: str, headers: bool = False) -> None:
     setup_log()
     log = getLogger()
     log.info(f"Parsing CSV {avg_city_prices_csv} file into {output_geojson} GeoJSON...")
-    points = [render_point(t[0], int(float(t[1])), float(t[2]), float(t[3])) for t in read_csv(avg_city_prices_csv)]
+    csv_lines = list(read_csv(avg_city_prices_csv))
+    if headers:
+        _ = csv_lines.pop(0)
+    points = [render_point(t[0], int(float(t[1])), float(t[2]), float(t[3])) for t in csv_lines]
     log.info(f"Rendering GeoJSON out of {len(points)} points...")
     render_geojson(points, output_geojson)
     log.info(f"Done rendering file {output_geojson}")
@@ -70,12 +73,13 @@ def _parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description='Render average city price CSV file as GeoJON')
     parser.add_argument('input', type=str, help='Path to CSV file with average city prices')
     parser.add_argument('output', type=str, help='Path to output GeoJSON file')
+    parser.add_argument('--headers', action='store_true', help='Assume there is a header row in input CSV')
     return parser.parse_args()
 
 
 def cli_main():
     args = _parse_args()
-    main(args.input, args.output)
+    main(args.input, args.output, args.headers)
 
 
 if __name__ == '__main__':
