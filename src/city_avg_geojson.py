@@ -36,12 +36,13 @@ def rgb2hex(r, g, b) -> str:
     return '#%02x%02x%02x' % (r, g, b)
 
 
-def render_point(city: str, price_per_sqm: int, lat: float, lon: float) -> Dict[str, Any]:
+def render_point(city: str, price_per_sqm: int, offer_count: int, lat: float, lon: float) -> Dict[str, Any]:
     point = deepcopy(TEMPLATE_JSON)
     point["geometry"]["coordinates"] = [lon, lat]
     point["properties"]["marker-color"] = COLORS[_calc_value(price_per_sqm)]
     point["properties"]["marker-size"] = "small"
     point["properties"]["title"] = city
+    point["properties"]["offer_count"] = offer_count
     point["properties"]["price_per_sqm"] = f"{round(price_per_sqm)} zł/m2"
     return point
 
@@ -63,7 +64,8 @@ def main(avg_city_prices_csv: str, output_geojson: str, headers: bool = False) -
     csv_lines = list(read_csv(avg_city_prices_csv))
     if headers:
         _ = csv_lines.pop(0)
-    points = [render_point(t[0], int(float(t[1])), float(t[2]), float(t[3])) for t in csv_lines]
+    points = [render_point(t[0], int(float(t[1])), int(float(t[2])), float(t[3]), float(t[4]))
+              for t in csv_lines if t[0]]
     log.info(f"Rendering GeoJSON out of {len(points)} points...")
     render_geojson(points, output_geojson)
     log.info(f"Done rendering file {output_geojson}")
