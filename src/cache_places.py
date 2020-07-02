@@ -21,7 +21,7 @@ def main(map_quest_api_key: str, csv_cache: str, offers_directory: str):
 
     for csv_file in list_csv_files(offers_directory):
         log.info(f"Parsing CSV {csv_file}")
-        for row in read_csv(csv_file, delimiter=";"):
+        for row in read_csv(csv_file):
             offer = ParcelOffer.from_csv_row(row)
             if offer:
                 _ = resolver.get(offer)

@@ -136,6 +136,7 @@ Działki przy granicy Osolina, obok las., Osolin, trzebnicki, dolnośląskie;;;;
 "Dziuplina, oławski, dolnośląskie",Dziuplina,,51.067604,17.336114
 "Dąbrowa, gm. Oleśnica, oleśnicki, Dolnośląskie",,56-416,51.3379757,17.4490747
 "Dąbrowa, gm. Twardogóra, oleśnicki, Dolnośląskie",,56-416,51.3379757,17.4490747
+"Dąbrowa, oleśnicki, dolnośląskie",,56-416,51.3379757,17.4490747
 "Dębina, oławski, Dolnośląskie",Dębina,,51.0543431,17.3869783
 "Dębno Polskie, rawicki, Wielkopolskie",,63-900,51.58506,16.88105
 "Dębno Polskie, rawicki, wielkopolskie",,63-900,51.58506,16.88105
@@ -430,6 +431,7 @@ Nowa cena! Gmina Zawonia, działki budowlane od 1000 m2, Zawonia, trzebnicki, do
 "Pawłów Trzebnicki, trzebnicki, dolnośląskie",Pawłów Trzebnicki,,51.3565131,17.0264165
 "Pełcznica, Kąty Wrocławskie, dolnośląskie",Pełcznica,,51.0427531,16.7368633
 "Pełczyce, Kobierzyce, dolnośląskie",Pełczyce,,50.9647563,16.9590291
+"Piaskowa, Zawonia, trzebnicki, dolnośląskie",Zawonia,,51.3156477,17.196555
 "Piecowice, Długołęka, dolnośląskie",Piecowice,55-093,51.1442284,17.2175821
 "Piekary, Oborniki Śląskie, dolnośląskie",Piekary,,51.327243,16.972082
 "Piersno, trzebnicki, dolnośląskie",Piersno,,51.2770152,17.1578466
@@ -812,6 +814,7 @@ Nowa cena! Gmina Zawonia, działki budowlane od 1000 m2, Zawonia, trzebnicki, do
 "dolnośląskie, Długołęka, Długołęka Kiełczów, Rzeczna",Kiełczów,,51.1398527,17.1790872
 "dolnośląskie, Długołęka, Długołęka Kiełczówek, Krokusowa",Kiełczówek,51-311,51.1187443,17.1878979
 "dolnośląskie, Długołęka, Długołęka Mirków, Kiełczowska",Mirków,,51.1662782,17.1588597
+"dolnośląskie, Długołęka, Długołęka Pasikurowice, Kwiatowa",Pasikurowice,,51.2104409,17.1051044
 "dolnośląskie, Długołęka, Długołęka Szczodre, Trzebnicka",Szczodre,55-095,51.1944026,17.1822017
 "dolnośląskie, Długołęka, Januszkowice",Januszkowice,,51.2218167,17.2403388
 "dolnośląskie, Długołęka, Kamień",Kamień,,51.1662532,17.2183163
@@ -829,6 +832,7 @@ Nowa cena! Gmina Zawonia, działki budowlane od 1000 m2, Zawonia, trzebnicki, do
 "dolnośląskie, Długołęka, Węgrów",Węgrów,,51.2649091,17.2199531
 "dolnośląskie, Długołęka, miasto Długołęka, Rzemieślnicza",,55-095,51.1787389,17.2047216
 "dolnośląskie, Długołęka, wrocławski, Krokusowa",Długołęka,,51.1743484,17.1933513
+"dolnośląskie, Długołęka, wrocławski, Trzebnicka",Długołęka,,51.1743484,17.1933513
 "dolnośląskie, Długołęka, wrocławski, Wrocławska",Długołęka,,51.1743484,17.1933513
 "dolnośląskie, Długołęka, Łozina",Łozina,,51.2329899,17.1749245
 "dolnośląskie, Jelcz-Laskowice, Grędzina",Grędzina,,51.091838,17.409666
@@ -957,6 +961,7 @@ Nowa cena! Gmina Zawonia, działki budowlane od 1000 m2, Zawonia, trzebnicki, do
 "dolnośląskie, Oleśnica, Bogusławice",Bogusławice,,51.2038732,17.4566184
 "dolnośląskie, Oleśnica, Cieśle",Cieśle,,51.22489,17.47031
 "dolnośląskie, Oleśnica, Diamentowa",,,,
+"dolnośląskie, Oleśnica, Dobroszycka",,56-400,51.22779,17.3691585
 "dolnośląskie, Oleśnica, Jesionowa",,56-400,51.2268723,17.41072
 "dolnośląskie, Oleśnica, Krzeczyn",Krzeczyn,,51.1515661,17.3357155
 "dolnośląskie, Oleśnica, Ligota Mała",Ligota Mała,,51.1360089,17.3638012
@@ -1032,7 +1037,9 @@ Nowa cena! Gmina Zawonia, działki budowlane od 1000 m2, Zawonia, trzebnicki, do
 "dolnośląskie, Twardogóra, Drogoszowice",Drogoszowice,,51.32259,17.48165
 "dolnośląskie, Twardogóra, Gola Wielka",Gola Wielka,,51.35304,17.54519
 "dolnośląskie, Twardogóra, Nowa Wieś Goszczańska",Nowa Wieś Goszczańska,,51.41777,17.4514
+"dolnośląskie, Twardogóra, Sosnówka",Sosnówka,,51.316055,17.455637
 "dolnośląskie, Twardogóra, Twardogóra",Twardogóra,56-416,51.364557,17.469599
+"dolnośląskie, Twardogóra, miasto Twardogóra, Sosnówka",Sosnówka,,51.316055,17.455637
 "dolnośląskie, Udanin, Udanin",Udanin,55-340,51.0375751,16.449276
 "dolnośląskie, Wisznia Mała, Kryniczno",,55-114,51.2169821,17.0397203
 "dolnośląskie, Wisznia Mała, Ligota Piękna",Ligota Piękna,55-114,51.2327723,17.0454379
@@ -1067,6 +1074,7 @@ Nowa cena! Gmina Zawonia, działki budowlane od 1000 m2, Zawonia, trzebnicki, do
 "dolnośląskie, Zawonia, Tarnowiec",Tarnowiec,,51.306137,17.187093
 "dolnośląskie, Zawonia, Zawonia",Zawonia,,51.3156477,17.196555
 "dolnośląskie, Zawonia, Złotów",,55-106,51.35638,17.28252
+"dolnośląskie, Zawonia, miasto Zawonia, Piaskowa",,55-106,51.3118075,17.20647
 "dolnośląskie, oleśnicki",,,51.2758659,17.5225304
 "dolnośląskie, Środa Śląska",Środa Śląska,55-300,51.1638967,16.5942689
 "dolnośląskie, Środa Śląska, Juszczyn",Juszczyn,,51.154941,16.679306

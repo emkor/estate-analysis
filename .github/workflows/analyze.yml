@@ -33,11 +33,6 @@ jobs:
       - name: Setup virtualenv and install dependencies
         run: make setup
         shell: bash
-      - name: Cache scraped offers
-        uses: actions/cache@v2
-        with:
-          path: ./bucket
-          key: b2-bucket
       - name: Download scraped offer data from B2
         run: make dl-data
         shell: bash
