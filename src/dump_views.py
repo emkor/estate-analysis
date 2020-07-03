@@ -17,6 +17,8 @@ def main(sqlite_db: str, output_path: str, headers: bool = False):
                   header_table="avg_city_price" if headers else None)
     _export_query(sqlite_db, "SELECT * FROM daily_price_avg", path.join(output_path, "daily_price_avg.csv"),
                   header_table="daily_price_avg" if headers else None)
+    _export_query(sqlite_db, "SELECT * FROM last_10days_offers", path.join(output_path, "last_10days_offers.csv"),
+                  header_table="last_10days_offers" if headers else None)
 
 
 def _export_query(sqlite_db: str, query: str, output_csv: str, header_table: Optional[str] = None):
