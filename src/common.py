@@ -41,7 +41,7 @@ def save_geojson(features: List[Dict[str, Any]], output_file: str) -> None:
 
 
 def color_gradient(start_color: str, end_color: str, count: int) -> List[str]:
-    return [(c.hex)[1:] for c in Color(start_color).range_to(Color(end_color), count)]
+    return [c.hex for c in Color(start_color).range_to(Color(end_color), count)]
 
 
 def setup_log(level: int = logging.INFO):
