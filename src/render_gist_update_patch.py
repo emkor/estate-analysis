@@ -33,9 +33,9 @@ def main(output: str):
                     "content": city_map_as_json_str,
                     "filename": "parcel-map.geojson"
                 },
-                "offer-map.json": {
+                "offer-map.geojson": {
                     "content": offer_map_as_json_str,
-                    "filename": "offer-map.json"
+                    "filename": "offer-map.geojson"
                 },
                 "daily_price_avg.csv": {
                     "content": daily_price_avg,
