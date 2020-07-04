@@ -187,6 +187,7 @@ GMINA OLEŚNICA , ATRAKCYJNA LOKALIZACJA, Nieciszów, oleśnicki, dolnośląskie
 "Główna, Głoska, średzki, dolnośląskie",Głoska,,51.2402488,16.7223444
 "Holendry, Białe Błoto, oleśnicki, dolnośląskie",Białe Błoto,,51.3325426,17.3541628
 "Iwiny, Siechnice, dolnośląskie",Iwiny,52-116,51.0425189,17.074719
+"Iwiny/Jagodno, Iwiny, wrocławski, dolnośląskie",Iwiny,52-116,51.0425189,17.074719
 "Jagoszyce, trzebnicki, dolnośląskie",Jagoszyce,55-110,51.3763321,16.9154115
 "Jaksonów, Żórawina, dolnośląskie",Jaksonów,,50.9349815,16.965342
 "Jana Dzierżonia, Oława, dolnośląskie",,55-200,50.9339882,17.3196885
@@ -279,6 +280,7 @@ GMINA OLEŚNICA , ATRAKCYJNA LOKALIZACJA, Nieciszów, oleśnicki, dolnośląskie
 "Księginice, Miękinia, dolnośląskie",Księginice,,51.2390465,16.7621483
 "Księginice, Trzebnica, dolnośląskie",Księginice,,51.3319777,17.0808425
 "Księginice, trzebnicki, Dolnośląskie",Księginice,,51.3319777,17.0808425
+"Księżycowa, Pruszowice, wrocławski, dolnośląskie",Pruszowice,51-217,51.1875643,17.1341209
 "Kuklice, Kobierzyce, dolnośląskie",Kuklice,,50.9527439,16.9440061
 "Kuźniczysko, Trzebnica, dolnośląskie",Kuźniczysko,,51.3778263,17.1820323
 "Kuźniczysko, trzebnicki, Dolnośląskie",Kuźniczysko,,51.3778263,17.1820323
@@ -451,6 +453,7 @@ Nowa cena! Gmina Zawonia, działki budowlane od 1000 m2, Zawonia, trzebnicki, do
 "Pisarzowice, średzki, dolnośląskie",Pisarzowice,,51.2077214,16.8516465
 "Piszkawa, oleśnicki, dolnośląskie",Piszkawa,,51.1506804,17.3053399
 "Pięknie położona działka budowlana z zagajnikiem, Osolin, trzebnicki, dolnośląskie",Osolin,,51.3423726,16.8467905
+"Piękocin, milicki, dolnośląskie",Piękocin,,51.5473749,17.2020301
 "Piława, Mietków, dolnośląskie",Piława,,50.9846166,16.7343019
 "Polna / Brzoskwiniowa, Ligota Piękna, trzebnicki, dolnośląskie",Ligota Piękna,55-114,51.2327723,17.0454379
 "Polna, Kobierzyce, dolnośląskie",,55-040,50.9680927,16.9253817
@@ -619,6 +622,7 @@ Nowa cena! Gmina Zawonia, działki budowlane od 1000 m2, Zawonia, trzebnicki, do
 "Tąpadła, Sobótka, dolnośląskie",,,50.8461088,16.7001697
 "Udanin, dolnośląskie",Udanin,55-340,51.0375751,16.449276
 "Ugoda, rawicki, Wielkopolskie",,63-904,51.5811222,16.9758502
+"Ul.Topazowa, Dobrzykowice, wrocławski, dolnośląskie",Dobrzykowice,,51.093811,17.190866
 "Uraz, Niziny",,,51.26277095,16.8545169177558
 "Uraz, Niziny, ul. Stumilowego Lasu",,,51.26277095,16.8545169177558
 "Uraz, Oborniki Śląskie, dolnośląskie",Uraz,,51.2445144,16.8533398
@@ -815,6 +819,7 @@ Nowa cena! Gmina Zawonia, działki budowlane od 1000 m2, Zawonia, trzebnicki, do
 "dolnośląskie, Długołęka, Długołęka Kiełczówek, Krokusowa",Kiełczówek,51-311,51.1187443,17.1878979
 "dolnośląskie, Długołęka, Długołęka Mirków, Kiełczowska",Mirków,,51.1662782,17.1588597
 "dolnośląskie, Długołęka, Długołęka Pasikurowice, Kwiatowa",Pasikurowice,,51.2104409,17.1051044
+"dolnośląskie, Długołęka, Długołęka Pruszowice, Księżycowa",Pruszowice,51-217,51.1875643,17.1341209
 "dolnośląskie, Długołęka, Długołęka Szczodre, Trzebnicka",Szczodre,55-095,51.1944026,17.1822017
 "dolnośląskie, Długołęka, Januszkowice",Januszkowice,,51.2218167,17.2403388
 "dolnośląskie, Długołęka, Kamień",Kamień,,51.1662532,17.2183163
@@ -962,6 +967,7 @@ Nowa cena! Gmina Zawonia, działki budowlane od 1000 m2, Zawonia, trzebnicki, do
 "dolnośląskie, Oleśnica, Cieśle",Cieśle,,51.22489,17.47031
 "dolnośląskie, Oleśnica, Diamentowa",,,,
 "dolnośląskie, Oleśnica, Dobroszycka",,56-400,51.22779,17.3691585
+"dolnośląskie, Oleśnica, Dąbrowa",Dąbrowa,,51.2343425,17.3660002
 "dolnośląskie, Oleśnica, Jesionowa",,56-400,51.2268723,17.41072
 "dolnośląskie, Oleśnica, Krzeczyn",Krzeczyn,,51.1515661,17.3357155
 "dolnośląskie, Oleśnica, Ligota Mała",Ligota Mała,,51.1360089,17.3638012
@@ -1093,6 +1099,7 @@ Nowa cena! Gmina Zawonia, działki budowlane od 1000 m2, Zawonia, trzebnicki, do
 "dolnośląskie, Żórawina, Bratowice",Bratowice,,50.986497,17.1320476
 "dolnośląskie, Żórawina, Galowice",Galowice,,50.9810102,17.0040737
 "dolnośląskie, Żórawina, Jaksonów",Jaksonów,,50.9349815,16.965342
+"dolnośląskie, Żórawina, Jana III Sobieskiego",,55-020,50.9456817,17.059962
 "dolnośląskie, Żórawina, Karwiany",Karwiany,,51.0205164,17.0101098
 "dolnośląskie, Żórawina, Milejowice",Milejowice,,50.9635095,17.0914924
 "dolnośląskie, Żórawina, Mnichowice",Mnichowice,,50.982086,17.0908727

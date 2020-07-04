@@ -37,7 +37,7 @@ jobs:
         uses: actions/cache@v2
         with:
           path: ./bucket
-          key: b2-bucket
+          key: b2-bucket-2020-07-04
       - name: Download scraped offer data from B2
         run: make dl-data
         shell: bash
