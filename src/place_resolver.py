@@ -71,12 +71,18 @@ class PlaceResolver:
 
 def build_resolve_name(domain: str, location: str) -> str:
     name_parts: List[str] = [p.strip() for p in location.split(",") if p.strip()]
-    condition = partial(lambda p: not p.lower().startswith("ul. ")
+    condition = partial(lambda p: not p.lower().startswith("ul.")
                                   and not p.lower().startswith("ul ")
                                   and not p.lower().startswith("ulica ")
+                                  and not p.lower().startswith("al.")
+                                  and not p.lower().startswith("al ")
+                                  and not p.lower().startswith("aleja ")
+                                  and not p.lower().startswith("ok.")
+                                  and not p.lower().startswith("ok ")
+                                  and not p.lower().startswith("okolice")
                                   and not p.lower().startswith("miasto ")
                                   and not p.lower().startswith("gmina ")
-                                  and not p.lower().startswith("gm. ")
+                                  and not p.lower().startswith("gm.")
                         )
     name_parts_wout_street = list(filter(condition, name_parts))
     name_parts_wout_dupl = list(OrderedDict.fromkeys(name_parts_wout_street))
