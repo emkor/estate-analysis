@@ -6,14 +6,16 @@ import json
 
 def _parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description='Creates update')
-    parser.add_argument('input', type=str, help='JSON file to be wrapped into update gist request')
     parser.add_argument('output', type=str, help='Output JSON containing update gist requests')
     return parser.parse_args()
 
 
-def main(input: str, output: str):
-    with open(input, "r") as in_:
-        input_map = json.load(in_)
+def main(output: str):
+    with open("parcel-map.json", "r") as in_:
+        city_map = json.load(in_)
+
+    with open("offer-map.json", "r") as in_:
+        offer_map = json.load(in_)
 
     with open("data/latest_offers.csv", "r") as f_:
         latest_offers_str = f_.read()
@@ -21,14 +23,19 @@ def main(input: str, output: str):
     with open("data/daily_price_avg.csv", "r") as f_:
         daily_price_avg = f_.read()
 
-    map_as_json_str = json.dumps(input_map, ensure_ascii=False)
+    city_map_as_json_str = json.dumps(city_map, ensure_ascii=False)
+    offer_map_as_json_str = json.dumps(offer_map, ensure_ascii=False)
     with open(output, "w") as out_f:
         json.dump({
             "description": "Map of Wroclaw-centric isochrones together with average price per square meter markers per village",
             "files": {
                 "parcel-map.geojson": {
-                    "content": map_as_json_str,
+                    "content": city_map_as_json_str,
                     "filename": "parcel-map.geojson"
+                },
+                "offer-map.json": {
+                    "content": offer_map_as_json_str,
+                    "filename": "offer-map.json"
                 },
                 "daily_price_avg.csv": {
                     "content": daily_price_avg,
@@ -44,7 +51,7 @@ def main(input: str, output: str):
 
 def cli_main():
     args = _parse_args()
-    main(args.input, args.output)
+    main(args.output)
 
 
 if __name__ == '__main__':
