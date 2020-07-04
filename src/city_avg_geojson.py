@@ -1,60 +1,14 @@
 #!/usr/bin/env python3
 
 import argparse
-import colorsys
-import json
-from copy import deepcopy
 from logging import getLogger
-from typing import List, Any, Dict
 
-from colour import Color
-
-from common import setup_log, read_csv
-
-TEMPLATE_JSON = {
-    "type": "Feature",
-    "geometry": {
-        "type": "Point",
-        "coordinates": [0., 0.]
-    },
-    "properties": {
-        "marker-symbol": "bank",
-        "marker-color": "PLACEHOLDER",
-        "title": "PLACEHOLDER",
-        "price_per_sqm": "PLACEHOLDER"
-    }
-}
-
-COLORS = [(c.hex)[1:] for c in Color("red").range_to(Color("green"), 10)]
-
-
-def hsv2rgb(h, s, v):
-    return tuple(round(i * 255) for i in colorsys.hsv_to_rgb(h, s, v))
-
-
-def rgb2hex(r, g, b) -> str:
-    return '#%02x%02x%02x' % (r, g, b)
-
-
-def render_point(city: str, price_per_sqm: int, offer_count: int, lat: float, lon: float) -> Dict[str, Any]:
-    point = deepcopy(TEMPLATE_JSON)
-    point["geometry"]["coordinates"] = [lon, lat]
-    point["properties"]["marker-color"] = COLORS[_calc_value(price_per_sqm)]
-    point["properties"]["marker-size"] = "small"
-    point["properties"]["title"] = city
-    point["properties"]["offer_count"] = offer_count
-    point["properties"]["price_per_sqm"] = f"{round(price_per_sqm)} zł/m2"
-    return point
+from common import setup_log, read_csv, render_geojson_point, save_geojson, color_gradient
 
 
 def _calc_value(price_per_sqm: int, min_price: int = 30, max_price: int = 180) -> int:
     value = min(max(price_per_sqm - min_price, 0) / (max_price - min_price), 1.)
     return round((1 - value) * 9)
-
-
-def render_geojson(features: List[Dict[str, Any]], output_file: str) -> None:
-    with open(output_file, "w") as f_:
-        json.dump({"type": "FeatureCollection", "features": features}, f_, ensure_ascii=False, indent=2)
 
 
 def main(avg_city_prices_csv: str, output_geojson: str, headers: bool = False) -> None:
@@ -64,10 +18,15 @@ def main(avg_city_prices_csv: str, output_geojson: str, headers: bool = False) -
     csv_lines = list(read_csv(avg_city_prices_csv))
     if headers:
         _ = csv_lines.pop(0)
-    points = [render_point(t[0], int(float(t[1])), int(float(t[2])), float(t[3]), float(t[4]))
+    colors = color_gradient("red", "green", 10)
+    points = [render_geojson_point(lat=float(t[3]), lon=float(t[4]),
+                                   marker_size="small", marker_color=colors[_calc_value(int(float(t[1])))],
+                                   props={"title": t[0],
+                                          "offer_count": int(float(t[2])),
+                                          "price_per_sqm": f"{round(int(float(t[1])))} zł/m2"})
               for t in csv_lines if t[0]]
     log.info(f"Rendering GeoJSON out of {len(points)} points...")
-    render_geojson(points, output_geojson)
+    save_geojson(points, output_geojson)
     log.info(f"Done rendering file {output_geojson}")
 
 
