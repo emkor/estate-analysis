@@ -10,7 +10,8 @@ env:
   B2_BUCKET: "dl-estate"
   B2_APP_KEY: ${{ secrets.B2_APP_KEY }}
   MAPQUEST_API_KEY: ${{ secrets.MAPQUEST_API_KEY }}
-  GH_GIST_ID: "51ce817d1bca483b3bd0532b8e00233c"
+  GH_AVG_GIST_ID: "51ce817d1bca483b3bd0532b8e00233c"
+  GH_OFFER_GIST_ID: "953f60ae6ee5c261ac9c4b0a0bfeb8e8"
   GH_API_KEY: ${{ secrets.GH_API_KEY }}
 
 jobs:
