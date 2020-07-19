@@ -26,11 +26,12 @@ GEOJSON_POINT_TEMPLATE = {
 
 
 def render_geojson_point(lat: float, lon: float, marker_size: str = "small", marker_color: str = "",
-                         props: Dict[str, Any] = None) -> Dict[str, Any]:
+                         marker_symbol: str = "bank", props: Dict[str, Any] = None) -> Dict[str, Any]:
     point = deepcopy(GEOJSON_POINT_TEMPLATE)
     point["geometry"]["coordinates"] = [lon, lat]
     point["properties"]["marker-color"] = marker_color
     point["properties"]["marker-size"] = marker_size
+    point["properties"]["marker-symbol"] = marker_symbol
     point["properties"].update(props)
     return point
 
