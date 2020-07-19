@@ -2,6 +2,8 @@ import argparse
 from datetime import datetime
 from logging import getLogger
 
+from colour import Color
+
 from common import read_csv, render_geojson_point, setup_log, save_geojson
 
 
@@ -28,9 +30,8 @@ def main(popc_csv: str, geojson: str):
             if address not in seen_streets:
                 seen_streets.add(address)
                 medium, speed, vendor = cells[3].strip(), float(cells[5].replace(',', '.').strip()), cells[1].strip()
-                point = render_geojson_point(lat=lat, lon=lon, marker_color='#11ee11', marker_symbol='star',
-                                             props={'title': '',
-                                                    'address': address,
+                point = render_geojson_point(lat=lat, lon=lon, marker_color=Color('blue').hex, marker_symbol='star',
+                                             props={'title': address,
                                                     'date': completion,
                                                     'vendor': vendor,
                                                     'medium': f"{medium}, {speed} Mbps"})
@@ -42,6 +43,5 @@ def main(popc_csv: str, geojson: str):
 
 
 if __name__ == '__main__':
-    # args = _parse_args()
-    main("/home/mat/proj/estate-analysis/data/uke_olawski/0215_POPC.csv",
-         "/home/mat/proj/estate-analysis/data/uke_olawski/0215_POPC.json")
+    args = _parse_args()
+    main(popc_csv=args.input, geojson=args.output)
