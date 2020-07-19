@@ -9,6 +9,7 @@
 "Annopol, Środa Wielkopolska, wielkopolskie",,,,
 "Bagno - 4km od stacji PKP w Osoli, Bagno, trzebnicki, dolnośląskie",Bagno,,51.3392058,16.8203816
 "Bagno - działki pod lasem, Bagno, trzebnicki, dolnośląskie",Bagno,,51.3392058,16.8203816
+"Bagno - ostatnie dwie działki pod lasem, Bagno, trzebnicki, dolnośląskie",Bagno,,51.3392058,16.8203816
 "Bagno, Oborniki Śląskie, dolnośląskie",Bagno,,51.3392058,16.8203816
 "Bagno, trzebnicki, Dolnośląskie",Bagno,,51.3392058,16.8203816
 "Bagno, trzebnicki, dolnośląskie",Bagno,,51.3392058,16.8203816
@@ -61,10 +62,12 @@
 "Brzezinki, oławski, Dolnośląskie",Brzezinki,,51.0892434,17.3705976
 "Brzezinki, oławski, dolnośląskie",Brzezinki,,51.0892434,17.3705976
 "Brzoskwiniowa, Ligota Piękna, trzebnicki, dolnośląskie",Ligota Piękna,55-114,51.2327723,17.0454379
+"Brzoskwiniowa/ Polna, Ligota Piękna, trzebnicki, dolnośląskie",Ligota Piękna,55-114,51.2327723,17.0454379
 "Brzozowa, Szczodre, wrocławski, dolnośląskie",Szczodre,55-095,51.1944026,17.1822017
 "Brzyków, Trzebnica, dolnośląskie",Brzyków,,51.3549922,17.0561113
 "Brzyków, trzebnicki, Dolnośląskie",Brzyków,,51.3549922,17.0561113
 "Brzyków, trzebnicki, dolnośląskie",Brzyków,,51.3549922,17.0561113
+"Brzózka-Wińsko, Brzózka, wołowski, dolnośląskie",Brzózka,,51.4597818,16.6932158
 "Budczyce, Zawonia, dolnośląskie",Budczyce,,51.3330091,17.1818463
 "Budczyce, trzebnicki, dolnośląskie",Budczyce,,51.3330091,17.1818463
 "Budziwojowice, wrocławski, Dolnośląskie",Budziwojowice,,51.2231485,17.187385
@@ -207,6 +210,7 @@
 "Jesionowa, Oleśnica, dolnośląskie",,56-400,51.2268723,17.41072
 "Jeszkowice, Czernica, dolnośląskie",Jeszkowice,,51.0525853,17.2201824
 "Jeziory Małe, Zaniemyśl, wielkopolskie",Jeziory Małe,,52.1673647,17.1484796
+"Jodłowcie, Jodłowice, wołowski, dolnośląskie",Jodłowice,,51.281238,16.793195
 "Jordanów Śląski, dolnośląskie",Jordanów Śląski,55-065,50.8643698,16.8674551
 "Juszczyn, Środa Śląska, dolnośląskie",Juszczyn,,51.154941,16.679306
 "Kadłub, Miękinia, dolnośląskie",Kadłub,,51.173811,16.6962107
@@ -253,6 +257,7 @@
 "Kościelna, Lubnów, trzebnicki, dolnośląskie",Lubnów,,51.2628931,16.8854641
 "Kraszów, Międzybórz, dolnośląskie",Kraszów,,51.3827991,17.6851825
 "Krościna Mała, trzebnicki, Dolnośląskie",Krościna Mała,,51.3749445,16.9436101
+"Krościna Wielka, trzebnicki, dolnośląskie",Krościna Wielka,,51.4017895,16.9113716
 "Krośnice, milicki, Dolnośląskie",,56-320,51.4747222,17.38
 "Kruczyn, Nowe Miasto nad Wartą, wielkopolskie",,,,
 "Kryniczno, Wisznia Mała, dolnośląskie",Kryniczno,55-114,51.2074747,17.0394225
@@ -346,6 +351,7 @@
 "Miodary, Dobroszyce, dolnośląskie",Miodary,,51.271137,17.398156
 "Miodary, oleśnicki, Dolnośląskie",Miodary,,51.271137,17.398156
 "Mirków, Długołęka, dolnośląskie",Mirków,,51.1662782,17.1588597
+"Mirków, wrocławski, Dolnośląskie",Mirków,,51.1662782,17.1588597
 "Mirków, wrocławski, dolnośląskie",Mirków,,51.1662782,17.1588597
 "Mirosławice, Sobótka, dolnośląskie",Mirosławice,,50.9553134,16.7839001
 "Miękinia, dolnośląskie",Miękinia,32-065,50.1434726,19.6305204
@@ -490,10 +496,12 @@ None,,43-460,49.6789772,18.8048554
 "Pęgów, Oborniki Śląskie, dolnośląskie",Pęgów,,51.246604,16.93276
 "Pęgów, trzebnicki, Dolnośląskie",Pęgów,,51.246604,16.93276
 "Pęgów, trzebnicki, dolnośląskie",Pęgów,,51.246604,16.93276
+"Płoski, górowski, Dolnośląskie",Płoski,,51.5270253,16.6883081
 "Racławice Małe, Żórawina, dolnośląskie",Racławice Małe,,50.926443,17.0897787
 "Radakowice, Miękinia, dolnośląskie",Radakowice,,51.128276,16.74056
 "Radakowice, średzki, Dolnośląskie",Radakowice,,51.128276,16.74056
 "Radakowice, średzki, dolnośląskie",Radakowice,,51.128276,16.74056
+"Radecz, Radecz, wołowski, dolnośląskie",Radecz,,51.2964705,16.7324879
 "Radecz, wołowski, dolnośląskie",Radecz,,51.2964705,16.7324879
 "Radomierzyce, Siechnice, dolnośląskie",Radomierzyce,,51.0433533,17.040789
 "Radwanice, Siechnice, dolnośląskie",Radwanice,,51.0574994,17.106757
@@ -550,6 +558,7 @@ None,,43-460,49.6789772,18.8048554
 "Smolec, Smolec, wrocławski, dolnośląskie",Smolec,,51.0747049,16.8839452
 "Smolec, gm. Kąty Wrocławskie, wrocławski, Dolnośląskie",Smolec,,51.0747049,16.8839452
 "Smolec, wrocławski, dolnośląskie",Smolec,,51.0747049,16.8839452
+"Smolna, oleśnicki, Dolnośląskie",,56-420,51.1555465,17.5202779
 "Smolna, oleśnicki, dolnośląskie",Smolna,,51.166548,17.442724
 "Sobótka, dolnośląskie",Sobótka,55-050,50.8990885,16.7445705
 "Sokołowice, Oleśnica, dolnośląskie",Sokołowice,,51.24327,17.44625
@@ -677,9 +686,11 @@ None,,43-460,49.6789772,18.8048554
 "Wrocław, Fabryczna, Jerzmanowo, ul. Jana Karola Chodkiewicza",,,,
 "Wrocław, Fabryczna, Jerzmanowo, ul. Osiniecka",,,,
 "Wrocław, Fabryczna, Leśnica",,,,
+"Wrocław, Fabryczna, Leśnica, Lutyńska",,,,
 "Wrocław, Fabryczna, Leśnica, Ratyń",,,,
 "Wrocław, Fabryczna, Leśnica, ul. Dolnobrzeska",,,,
 "Wrocław, Fabryczna, Leśnica, ul. Granatowa",,,,
+"Wrocław, Fabryczna, Leśnica, ul. Lutyńska",,,,
 "Wrocław, Fabryczna, Marszowice",,,,
 "Wrocław, Fabryczna, Marszowice, Wilkszyńska",,,,
 "Wrocław, Fabryczna, Marszowice, ul. Krzelowska",,,,
@@ -726,6 +737,7 @@ None,,43-460,49.6789772,18.8048554
 "Wrocław, Psie Pole, Wojnów",,,,
 "Wrocław, Psie Pole, Wojnów, ul. Błotna",,,,
 "Wrocław, Psie Pole, Zakrzów, gen. Leopolda Okulickiego",,,,
+"Wrocław, Psie Pole, ul. Gimnazjalna",Wrocław,51-313,51.1459988,17.114733
 "Wrocław, Psie Pole, ul. Henryka Michała Kamieńskiego",Wrocław,51-313,51.1459988,17.114733
 "Wrocław, Psie Pole, ul. Parkowa",Wrocław,51-313,51.1459988,17.114733
 "Wrocław, dolnośląskie",Wrocław,,51.1089776,17.0326689
@@ -743,6 +755,7 @@ None,,43-460,49.6789772,18.8048554
 "Wróblowice, średzki, Dolnośląskie",Wróblowice,,51.1575618,16.7835683
 "Wróblowice, średzki, dolnośląskie",Wróblowice,,51.1575618,16.7835683
 "Wszemirów, trzebnicki, Dolnośląskie",Wszemirów,,51.3668867,16.995575
+"Wszewilki, milicki, dolnośląskie",Wszewilki,,51.5467514,17.2830775
 "Wysoki Kościół, Wisznia Mała, dolnośląskie",Wysoki Kościół,,51.2658394,17.0511268
 "Wysoki Kościół, trzebnicki, Dolnośląskie",Wysoki Kościół,,51.2658394,17.0511268
 "Wysoki Kościół, trzebnicki, dolnośląskie",Wysoki Kościół,,51.2658394,17.0511268
@@ -776,6 +789,7 @@ None,,43-460,49.6789772,18.8048554
 "dolnośląskie, Czernica, Chrząstawa Mała",Chrząstawa Mała,,51.081932,17.281738
 "dolnośląskie, Czernica, Chrząstawa Wielka",Chrząstawa Wielka,55-001,51.0948751,17.2982583
 "dolnośląskie, Czernica, Czernica",Czernica,,51.046389,17.243889
+"dolnośląskie, Czernica, Czernica Dobrzykowice, Konopnickiej",Dobrzykowice,,51.093811,17.190866
 "dolnośląskie, Czernica, Czernica Dobrzykowice, Krzykowska",Dobrzykowice,,51.093811,17.190866
 "dolnośląskie, Czernica, Czernica Dobrzykowice, Lawendowa",Dobrzykowice,,51.093811,17.190866
 "dolnośląskie, Czernica, Czernica Dobrzykowice, Wrocławska",Dobrzykowice,,51.093811,17.190866
@@ -828,6 +842,7 @@ None,,43-460,49.6789772,18.8048554
 "dolnośląskie, Długołęka, Długołęka Kiełczów, Rzeczna",Kiełczów,,51.1398527,17.1790872
 "dolnośląskie, Długołęka, Długołęka Kiełczówek, Krokusowa",Kiełczówek,51-311,51.1187443,17.1878979
 "dolnośląskie, Długołęka, Długołęka Mirków, Kiełczowska",Mirków,,51.1662782,17.1588597
+"dolnośląskie, Długołęka, Długołęka Mirków, Wrzosowa",Mirków,,51.1662782,17.1588597
 "dolnośląskie, Długołęka, Długołęka Pasikurowice, Kwiatowa",Pasikurowice,,51.2104409,17.1051044
 "dolnośląskie, Długołęka, Długołęka Piecowice, Kwiatowa",Piecowice,55-093,51.1442284,17.2175821
 "dolnośląskie, Długołęka, Długołęka Pruszowice, Księżycowa",Pruszowice,51-217,51.1875643,17.1341209
@@ -866,6 +881,7 @@ None,,43-460,49.6789772,18.8048554
 "dolnośląskie, Kobierzyce, Kobierzyce",Kobierzyce,,50.9720586,16.9298119
 "dolnośląskie, Kobierzyce, Kobierzyce Bielany Wrocławskie, Logistyczna",Kobierzyce,,50.9720586,16.9298119
 "dolnośląskie, Kobierzyce, Kobierzyce Bielany Wrocławskie, Wrocławska",Kobierzyce,,50.9720586,16.9298119
+"dolnośląskie, Kobierzyce, Kobierzyce Cieszyce, Polna",Cieszyce,,50.939936,16.8982996
 "dolnośląskie, Kobierzyce, Kobierzyce Domasław, Tyniecka",Domasław,,51.0108924,16.9562049
 "dolnośląskie, Kobierzyce, Kobierzyce Domasław, Wrocławska",Domasław,,51.0108924,16.9562049
 "dolnośląskie, Kobierzyce, Kobierzyce Kuklice, Spokojna",Kuklice,,50.9527439,16.9440061
@@ -877,6 +893,7 @@ None,,43-460,49.6789772,18.8048554
 "dolnośląskie, Kobierzyce, Magnice",Magnice,,50.9893856,16.9527357
 "dolnośląskie, Kobierzyce, Pełczyce",Pełczyce,,50.9647563,16.9590291
 "dolnośląskie, Kobierzyce, Polna",,55-040,50.9680927,16.9253817
+"dolnośląskie, Kobierzyce, Pustków Żurawski",Pustków Żurawski,,50.9589489,16.8642733
 "dolnośląskie, Kobierzyce, Spokojna",,55-040,50.9695252,16.9243823
 "dolnośląskie, Kobierzyce, Tyniec Mały",Tyniec Mały,55-041,51.0190438,16.9211387
 "dolnośląskie, Kobierzyce, Wierzbice",Wierzbice,,50.9539199,16.8927922
@@ -891,6 +908,7 @@ None,,43-460,49.6789772,18.8048554
 "dolnośląskie, Kąty Wrocławskie, Gniechowice",Gniechowice,,50.9866327,16.8331179
 "dolnośląskie, Kąty Wrocławskie, Gądów",Gądów,,51.0519532,16.9105309
 "dolnośląskie, Kąty Wrocławskie, Gądów, Akacjowa",Gądów,,51.0519532,16.9105309
+"dolnośląskie, Kąty Wrocławskie, Kilianów",Kilianów,,51.003898,16.747606
 "dolnośląskie, Kąty Wrocławskie, Kąty Wrocławskie",Kąty Wrocławskie,,51.0313425,16.7633012
 "dolnośląskie, Kąty Wrocławskie, Kąty Wrocławskie Bogdaszowice, Główna",Bogdaszowice,,51.085896,16.78349
 "dolnośląskie, Kąty Wrocławskie, Kąty Wrocławskie Mokronos Dolny, Drogowców",Mokronos Dolny,,51.071683,16.936543
@@ -1000,6 +1018,7 @@ None,,43-460,49.6789772,18.8048554
 "dolnośląskie, Prusice",Prusice,,51.3707663,16.9626816
 "dolnośląskie, Prusice, Gola",Gola,,51.353374,16.934333
 "dolnośląskie, Prusice, Kopaszyn",Kopaszyn,,51.34481,16.9504503
+"dolnośląskie, Prusice, Krościna Wielka",Krościna Wielka,,51.4017895,16.9113716
 "dolnośląskie, Prusice, Prusice",Prusice,,51.3707663,16.9626816
 "dolnośląskie, Prusice, Wilkowa",Wilkowa,,51.344607,16.9064661
 "dolnośląskie, Prusice, miasto Prusice, Rynek",Prusice,,51.3707663,16.9626816
@@ -1138,8 +1157,10 @@ None,,43-460,49.6789772,18.8048554
 "dolnośląskie, Żórawina, miasto Żórawina, Bolesława Prusa",Żórawina,55-020,50.9801213,17.0405147
 "dolnośląskie, Żórawina, wrocławski, Jana III Sobieskiego",Żórawina,55-020,50.9801213,17.0405147
 "dolnośląskie, Żórawina, Żórawina",Żórawina,55-020,50.9801213,17.0405147
+"dolnośląskie, Żórawina, Żórawina Mnichowice, Jarzębinowa",Mnichowice,,50.982086,17.0908727
 "dolnośląskie, Żórawina, Żórawina Suchy Dwór, Lisia",Suchy Dwór,,51.0215929,17.0310554
 "dolnośląskie, Żórawina, Żórawina Suchy Dwór, Wrocławska",Suchy Dwór,,51.0215929,17.0310554
+"obręb Budczyce gmina Zawonia dz. nr 20/7 AM-1, Budczyce, trzebnicki, dolnośląskie",Budczyce,,51.3330091,17.1818463
 "ok. Parku, Wisznia Mała, trzebnicki, dolnośląskie",Wisznia Mała,,51.250346,17.0484111
 "okolice ul. Kiełczowskiej, Kiełczów, wrocławski, dolnośląskie",Kiełczów,,51.1398527,17.1790872
 "oleśnicki, Bierutów, dolnośląskie",Bierutów,56-420,51.125871,17.5437303
@@ -1152,6 +1173,8 @@ None,,43-460,49.6789772,18.8048554
 "ul. Bursztynowa, Kamień, wrocławski, dolnośląskie",Kamień,,51.1662532,17.2183163
 "ul. Chmielna, Bogdaszowice, wrocławski, dolnośląskie",Bogdaszowice,,51.085896,16.78349
 "ul. Chłopska, Smolec, wrocławski, dolnośląskie",Smolec,,51.0747049,16.8839452
+"ul. Cypriana Kamila Norwida, Dobrzykowice, wrocławski, dolnośląskie",Dobrzykowice,,51.093811,17.190866
+"ul. Dobra, Kiełczów, wrocławski, dolnośląskie",Kiełczów,,51.1398527,17.1790872
 "ul. Dębowa, Krzeptów, wrocławski, dolnośląskie",Krzeptów,,51.0911241,16.8862309
 "ul. Dębowa, Smolec, wrocławski, dolnośląskie",Smolec,,51.0747049,16.8839452
 "ul. Długa, Psary, trzebnicki, dolnośląskie",Psary,51-188,51.1873358,17.0320313
@@ -1178,6 +1201,7 @@ None,,43-460,49.6789772,18.8048554
 "ul. Ludwikowska, Oleśnica, oleśnicki, dolnośląskie",Oleśnica,56-400,51.2095314,17.3804559
 "ul. Malinowa, Kamieniec Wrocławski, wrocławski, dolnośląskie",Kamieniec Wrocławski,55-002,51.075237,17.1735569
 "ul. Nowego Osiedla, Łozina, wrocławski, dolnośląskie",Łozina,,51.2329899,17.1749245
+"ul. Ogrodowa, Brzezia Łąka, wrocławski, dolnośląskie",Brzezia Łąka,,51.1229492,17.2437672
 "ul. Oleśnicka, Dobroszyce, oleśnicki, dolnośląskie",Dobroszyce,,51.26554,17.34535
 "ul. Parkowa, Gałów, średzki, dolnośląskie",Gałów,,51.1111189,16.8145917
 "ul. Parkowa, Psary, trzebnicki, dolnośląskie",Psary,51-188,51.1873358,17.0320313
@@ -1205,6 +1229,7 @@ None,,43-460,49.6789772,18.8048554
 "ul. Łąkowa, Piotrkowiczki, trzebnicki, dolnośląskie",Piotrkowiczki,,51.268959,17.025697
 "ul. Żmigrodzka, Prusice, trzebnicki, dolnośląskie",Prusice,,51.3707663,16.9626816
 "ul.Kazimierza Jagiellończyka nr 11, Oborniki Śląskie, trzebnicki, dolnośląskie",Oborniki Śląskie,55-120,51.300704,16.9125929
+"ul.Trzebnicka  róg ul. Tęczowa, Czeszów, trzebnicki, dolnośląskie",Czeszów,,51.3797685,17.245644
 "ul.Wąska, Lutynia, średzki, dolnośląskie",Lutynia,,52.1010434,17.506167
 "ulica Malinowa, Ligota Piękna, trzebnicki, dolnośląskie",Ligota Piękna,55-114,51.2327723,17.0454379
 "wielkopolskie, Dominowo, Dominowo",Dominowo,63-012,52.2915437,17.3565857

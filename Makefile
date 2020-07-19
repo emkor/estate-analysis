@@ -40,8 +40,12 @@ render:
 	@echo "---- Rendering data ----"
 	@$(VENV_PY3) src/city_avg_geojson.py "data/avg_city_price.csv" "data/avg_city_prices.json" --headers
 	@$(VENV_PY3) src/render_new_offers.py "data/last_10days_offers.csv" "data/recent_offers.json" --headers
-	@$(VENV_PY3) src/render_map.py "data/isochrone_wroclaw_car_56min_7min.json" "parcel-map.json" "data/train_station.json" "data/mpk_stops.json" "data/avg_city_prices.json"
-	@$(VENV_PY3) src/render_map.py "data/isochrone_wroclaw_car_56min_7min.json" "offer-map.json" "data/train_station.json" "data/mpk_stops.json" "data/recent_offers.json"
+	@$(VENV_PY3) src/render_popc.py "data/uke/0214_POPC.csv" "data/0214_POPC.json"
+	@$(VENV_PY3) src/render_popc.py "data/uke/0215_POPC.csv" "data/0215_POPC.json"
+	@$(VENV_PY3) src/render_popc.py "data/uke/0218_POPC.csv" "data/0218_POPC.json"
+	@$(VENV_PY3) src/render_popc.py "data/uke/0220_POPC.csv" "data/0220_POPC.json"
+	@$(VENV_PY3) src/render_map.py "data/isochrone_wroclaw_car_56min_7min.json" "parcel-map.json" "data/train_station.json" "data/mpk_stops.json" "data/0214_POPC.json" "data/0215_POPC.json" "data/0218_POPC.json" "data/0220_POPC.json" "data/avg_city_prices.json"
+	@$(VENV_PY3) src/render_map.py "data/isochrone_wroclaw_car_56min_7min.json" "offer-map.json" "data/train_station.json" "data/mpk_stops.json" "data/0214_POPC.json" "data/0215_POPC.json" "data/0218_POPC.json" "data/0220_POPC.json" "data/recent_offers.json"
 	@$(VENV_PY3) src/render_avg_gist_update.py "avg_gist_update.json"
 	@$(VENV_PY3) src/render_offer_gist_update.py "offer_gist_update.json"
 
