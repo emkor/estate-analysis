@@ -100,6 +100,7 @@
 "Czarne Piątkowo, Środa Wielkopolska, wielkopolskie",Czarne Piątkowo,,52.1946058,17.4009068
 "Czernica, dolnośląskie",Czernica,,51.046389,17.243889
 "Czeszów, Zawonia, dolnośląskie",Czeszów,,51.3797685,17.245644
+"Czeszów, trzebnicki, Dolnośląskie",Czeszów,,51.3797685,17.245644
 "Czeszów, trzebnicki, dolnośląskie",Czeszów,,51.3797685,17.245644
 "Diamentowa, Kamień, wrocławski, dolnośląskie",Kamień,,51.1662532,17.2183163
 "Diamentowa, Oleśnica, dolnośląskie",,,,
@@ -217,6 +218,7 @@
 "Kadłub, średzki, Dolnośląskie",Kadłub,,51.173811,16.6962107
 "Kalinowa 7-9, Jary, trzebnicki, dolnośląskie",Jary,,51.2839213,16.8666076
 "Kalinowa, Dobrzykowice, wrocławski, dolnośląskie",Dobrzykowice,,51.093811,17.190866
+"Kalinowa, Pęgów, trzebnicki, dolnośląskie",Pęgów,,51.246604,16.93276
 "Kamieniec Wrocławski, Czernica, dolnośląskie",Kamieniec Wrocławski,55-002,51.075237,17.1735569
 "Kamieniec Wrocławski, wrocławski, Dolnośląskie",Kamieniec Wrocławski,55-002,51.075237,17.1735569
 "Kamieniec Wrocławski, wrocławski, dolnośląskie",Kamieniec Wrocławski,55-002,51.075237,17.1735569
@@ -645,6 +647,7 @@ None,,43-460,49.6789772,18.8048554
 "Utrata, Nowe Miasto nad Wartą, wielkopolskie",,,,
 "Warzęgowo, wołowski, Dolnośląskie",Warzęgowo,,51.4016836,16.7376629
 "Wałkowa, milicki, dolnośląskie",Wałkowa,,51.5047968,17.3100224
+"Wały, 60 m od jeziora., Wały, wołowski, dolnośląskie",,,,
 "Wały, wołowski, Dolnośląskie",Wały,,51.2623729,16.7753342
 "Wały, wołowski, dolnośląskie",Wały,,51.2623729,16.7753342
 "Wierzbice, Kobierzyce, dolnośląskie",Wierzbice,,50.9539199,16.8927922
@@ -908,6 +911,7 @@ None,,43-460,49.6789772,18.8048554
 "dolnośląskie, Kąty Wrocławskie, Gniechowice",Gniechowice,,50.9866327,16.8331179
 "dolnośląskie, Kąty Wrocławskie, Gądów",Gądów,,51.0519532,16.9105309
 "dolnośląskie, Kąty Wrocławskie, Gądów, Akacjowa",Gądów,,51.0519532,16.9105309
+"dolnośląskie, Kąty Wrocławskie, Gądów, Gądów Jaszkotle",Gądów,,51.0519532,16.9105309
 "dolnośląskie, Kąty Wrocławskie, Kilianów",Kilianów,,51.003898,16.747606
 "dolnośląskie, Kąty Wrocławskie, Kąty Wrocławskie",Kąty Wrocławskie,,51.0313425,16.7633012
 "dolnośląskie, Kąty Wrocławskie, Kąty Wrocławskie Bogdaszowice, Główna",Bogdaszowice,,51.085896,16.78349
@@ -1066,6 +1070,7 @@ None,,43-460,49.6789772,18.8048554
 "dolnośląskie, Sobótka, Sulistrowiczki",Sulistrowiczki,,50.845894,16.7272897
 "dolnośląskie, Sobótka, Tąpadła",,,50.8461088,16.7001697
 "dolnośląskie, Syców, Drołtowice",Drołtowice,,51.33712,17.58535
+"dolnośląskie, Syców, Syców",Syców,,51.30998,17.72354
 "dolnośląskie, Trzebnica, Biedaszków Wielki",Biedaszków Wielki,,51.4012042,17.1370818
 "dolnośląskie, Trzebnica, Blizocin",Blizocin,,51.3688007,17.1586951
 "dolnośląskie, Trzebnica, Brzyków",Brzyków,,51.3549922,17.0561113
@@ -1083,6 +1088,7 @@ None,,43-460,49.6789772,18.8048554
 "dolnośląskie, Twardogóra, Gola Wielka",Gola Wielka,,51.35304,17.54519
 "dolnośląskie, Twardogóra, Nowa Wieś Goszczańska",Nowa Wieś Goszczańska,,51.41777,17.4514
 "dolnośląskie, Twardogóra, Sosnówka",Sosnówka,,51.316055,17.455637
+"dolnośląskie, Twardogóra, Sądrożyce, Sądrożyce Dąbrowa",Sądrożyce,,51.34414,17.47505
 "dolnośląskie, Twardogóra, Twardogóra",Twardogóra,56-416,51.364557,17.469599
 "dolnośląskie, Twardogóra, miasto Twardogóra, Sosnówka",Sosnówka,,51.316055,17.455637
 "dolnośląskie, Udanin, Udanin",Udanin,55-340,51.0375751,16.449276
@@ -1219,6 +1225,7 @@ None,,43-460,49.6789772,18.8048554
 "ul. Wiosenna, Kryniczno, trzebnicki, dolnośląskie",Kryniczno,,51.2074747,17.0394225
 "ul. Wiosenna, Zawonia, trzebnicki, dolnośląskie",Zawonia,,51.3156477,17.196555
 "ul. Wiśniowa, Wilkszyn, średzki, dolnośląskie",Wilkszyn,,51.1912884,16.8652332
+"ul. Wiśniowa, Źródła, średzki, dolnośląskie",Źródła,,51.1605077,16.7245888
 "ul. Wrocławska, Trzebnica, trzebnicki, dolnośląskie",Trzebnica,55-100,51.3096424,17.062596
 "ul. Wschodnia, Długołęka, wrocławski, dolnośląskie",Długołęka,,51.1743484,17.1933513
 "ul. Zacisze, Lubnów, trzebnicki, dolnośląskie",Lubnów,,51.2628931,16.8854641
