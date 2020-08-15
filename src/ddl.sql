@@ -32,14 +32,16 @@ CREATE TABLE IF NOT EXISTS broadband
     planned   DATE         NULL,
     county    VARCHAR(40)  NOT NULL,
     city      VARCHAR(100) NOT NULL,
-    address   VARCHAR(200) NOT NULL,
+    street    VARCHAR(200) NULL,
+    number    VARCHAR(20)  NULL,
     provider  VARCHAR(100) NOT NULL,
     medium    VARCHAR(100) NOT NULL,
     bandwidth INTEGER      NOT NULL
 );
 
 CREATE INDEX IF NOT EXISTS broadband_city_ix ON broadband (city);
-CREATE INDEX IF NOT EXISTS broadband_address_ix ON broadband (address);
+CREATE INDEX IF NOT EXISTS broadband_street_ix ON broadband (street);
+CREATE INDEX IF NOT EXISTS broadband_number_ix ON broadband (number);
 CREATE INDEX IF NOT EXISTS broadband_provider_ix ON broadband (provider);
 CREATE INDEX IF NOT EXISTS broadband_medium_ix ON broadband (medium);
 CREATE INDEX IF NOT EXISTS broadband_bandwidth_ix ON broadband (bandwidth);

@@ -1,5 +1,5 @@
 from copy import deepcopy
-from datetime import datetime
+from datetime import datetime, date
 from typing import Any, Dict, Optional, List
 from urllib.parse import urlparse
 
@@ -153,3 +153,57 @@ class Place(Model):
 
     def to_sql_row(self) -> List[Any]:
         return self.to_csv_row()
+
+
+class BroadbandAccess(Model):
+    def __init__(self, ident: str, planned: Optional[date],
+                 county: str, city: str, street: Optional[str], number: Optional[str],
+                 provider: str, medium: str, bandwidth: int):
+        self.ident = ident
+        self.planned = planned
+        self.county = county
+        self.city = city
+        self.street = street
+        self.number = number
+        self.provider = provider
+        self.medium = medium
+        self.bandwidth = bandwidth
+
+    def __hash__(self):
+        return hash(self.ident)
+
+    def __eq__(self, other: 'BroadbandAccess'):
+        return self.ident == other.ident
+
+    def __repr__(self):
+        return f"{self.__class__.__name__}({self.ident}, {self.city}, {self.provider}, {self.medium}, {self.bandwidth})"
+
+    @classmethod
+    def from_csv_row(cls, row: List[str]) -> Optional['BroadbandAccess']:
+        return cls.from_sql_row(row)
+
+    def to_csv_row(self) -> List[str]:
+        return self.to_sql_row()
+
+    def to_json(self) -> Dict[str, Any]:
+        return deepcopy(self.__dict__)
+
+    @classmethod
+    def from_json(cls, json_dict: Dict[str, Any]) -> Optional['BroadbandAccess']:
+        try:
+            return cls(**json_dict)
+        except (TypeError, ValueError):
+            return None
+
+    @classmethod
+    def from_sql_row(cls, row: List[Any]) -> Optional['BroadbandAccess']:
+        try:
+            row[1] = date.fromisoformat(row[1]) if isinstance(row[1], str) else None
+            return cls(*(r or None for r in row)) if len(row) == 9 else None
+        except (TypeError, ValueError):
+            return None
+
+    def to_sql_row(self) -> List[Any]:
+        return [self.ident, self.planned.isoformat() if self.planned else None,
+                self.county, self.city, self.street, self.number,
+                self.provider, self.medium, self.bandwidth]

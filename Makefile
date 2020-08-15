@@ -33,7 +33,7 @@ analyze:
 	@echo "---- Analyzing data ----"
 	@$(VENV_PY3) src/cache_places.py "data/place_cache.csv" $$MAPQUEST_API_KEY "offers"
 	@rm -f "data/offers.db"
-	@$(VENV_PY3) src/import_into_db.py "data/offers.db" "src/ddl.sql" "data/place_cache.csv" "offers"
+	@$(VENV_PY3) src/import_into_db.py "data/offers.db" "src/ddl.sql" "data/place_cache.csv" "offers" "data/uke/current" "data/uke/popc"
 	@$(VENV_PY3) src/dump_views.py --headers "data/offers.db" "data"
 
 render:
