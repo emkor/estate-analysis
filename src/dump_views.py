@@ -11,6 +11,8 @@ from common import write_csv, setup_log
 
 def main(sqlite_db: str, output_path: str, headers: bool = False):
     setup_log()
+    _export_query(sqlite_db, "SELECT * FROM city_broadband", path.join(output_path, "city_broadband.csv"),
+                  header_table="city_broadband" if headers else None)
     _export_query(sqlite_db, "SELECT * FROM latest_offers", path.join(output_path, "latest_offers.csv"),
                   header_table="latest_offers" if headers else None)
     _export_query(sqlite_db, "SELECT * FROM avg_city_price", path.join(output_path, "avg_city_price.csv"),
