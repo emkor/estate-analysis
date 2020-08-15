@@ -20,8 +20,7 @@ GEOJSON_POINT_TEMPLATE = {
     "properties": {
         "marker-symbol": "bank",
         "marker-color": "PLACEHOLDER",
-        "title": "PLACEHOLDER",
-        "price_per_sqm": "PLACEHOLDER"
+        "title": "PLACEHOLDER"
     }
 }
 
