@@ -5,7 +5,8 @@ import os
 import time
 from copy import deepcopy
 from os import path
-from typing import Generator, List, Iterable, Dict, Any
+from random import uniform
+from typing import Generator, List, Iterable, Dict, Any, Tuple
 
 from colour import Color
 from more_itertools import chunked
@@ -39,6 +40,22 @@ def render_geojson_point(lat: float, lon: float, marker_size: str = "small", mar
 def save_geojson(features: List[Dict[str, Any]], output_file: str) -> None:
     with open(output_file, "w") as f_:
         json.dump({"type": "FeatureCollection", "features": features}, f_, ensure_ascii=False, indent=2)
+
+
+def randomize_coordinates(lat: float, lon: float, delta: float = 0.006) -> Tuple[float, float]:
+    lat_positive_delta = uniform(delta / 3, delta)
+    lat_negative_delta = uniform(-1 * delta / 3, -1 * delta)
+    lon_positive_delta = uniform(delta / 3, delta)
+    lon_negative_delta = uniform(-1 * delta / 3, -1 * delta)
+    selector = uniform(0, 1)
+    if selector <= 0.25:
+        return lat + lat_negative_delta, lon + lon_negative_delta
+    elif selector <= 0.5:
+        return lat + lat_negative_delta, lon + lon_positive_delta
+    elif selector <= 0.75:
+        return lat + lat_positive_delta, lon + lon_negative_delta
+    else:
+        return lat + lat_positive_delta, lon + lon_positive_delta
 
 
 def color_gradient(start_color: str, end_color: str, count: int) -> List[str]:
