@@ -56,6 +56,22 @@ WHERE area_m2 >= 800
 GROUP BY date(timestamp)
 ORDER BY date(timestamp);
 
+CREATE VIEW IF NOT EXISTS "city_broadband" AS
+SELECT broadband.city        AS City,
+       count(*)              AS IspApCount,
+       min(bandwidth)        AS BwMin,
+       round(avg(bandwidth)) AS BwAvg,
+       max(bandwidth)        AS BwMax,
+       p.lat                 AS "Lat",
+       p.lon                 AS "Lon"
+FROM broadband
+         INNER JOIN place p on broadband.city = p.city
+WHERE (provider LIKE 'Orange%'
+    OR provider LIKE 'Netia%')
+GROUP BY broadband.city
+ORDER BY broadband.City;
+
+
 CREATE VIEW IF NOT EXISTS latest_offers AS
 SELECT CAST(JulianDay(max(o.timestamp)) - JulianDay(min(OfferHistory."FirstOffer")) AS INTEGER) AS "Age",
        min(p.city)                                                                              AS "City",
@@ -67,9 +83,14 @@ SELECT CAST(JulianDay(max(o.timestamp)) - JulianDay(min(OfferHistory."FirstOffer
        min(o.ident)                                                                             AS "ID",
        o.url                                                                                    AS "URL",
        min(p.lat)                                                                               AS "Lat",
-       min(p.lon)                                                                               AS "Lon"
+       min(p.lon)                                                                               AS "Lon",
+       inet.IspApCount                                                                          AS "NetApCount",
+       inet.BwMin                                                                               AS "NetBwMin",
+       inet.BwAvg                                                                               AS "NetBwAvg",
+       inet.BwMax                                                                               AS "NetBwMax"
 FROM parcel_offer AS o
          LEFT JOIN place p on o.location = p.location
+         LEFT JOIN city_broadband AS inet ON p.city = inet.City
          LEFT JOIN (SELECT city,
                            round(avg(price_pln / area_m2)) AS "AvgPricePerM2"
                     FROM parcel_offer
@@ -150,18 +171,3 @@ WHERE offer.price_pln / offer.area_m2 < 1000
 GROUP BY city
 HAVING count(DISTINCT ident) >= 2
 ORDER BY city;
-
-CREATE VIEW IF NOT EXISTS "city_broadband" AS
-SELECT broadband.city        AS City,
-       count(*)              AS IspApCount,
-       min(bandwidth)        AS BwMin,
-       round(avg(bandwidth)) AS BwAvg,
-       max(bandwidth)        AS BwMax,
-       p.lat                 AS "Lat",
-       p.lon                 AS "Lon"
-FROM broadband
-         INNER JOIN place p on broadband.city = p.city
-WHERE (provider LIKE 'Orange%'
-    OR provider LIKE 'Netia%')
-GROUP BY broadband.city
-ORDER BY broadband.City;
