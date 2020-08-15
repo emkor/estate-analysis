@@ -26,6 +26,24 @@ CREATE INDEX IF NOT EXISTS timestamp_ix ON parcel_offer (timestamp);
 CREATE INDEX IF NOT EXISTS city_ix ON place (city);
 CREATE INDEX IF NOT EXISTS postcode_ix ON place (postcode);
 
+CREATE TABLE IF NOT EXISTS broadband
+(
+    ident     VARCHAR(10)  NOT NULL,
+    planned   DATE         NULL,
+    county    VARCHAR(40)  NOT NULL,
+    city      VARCHAR(100) NOT NULL,
+    address   VARCHAR(200) NOT NULL,
+    provider  VARCHAR(100) NOT NULL,
+    medium    VARCHAR(100) NOT NULL,
+    bandwidth INTEGER      NOT NULL
+);
+
+CREATE INDEX IF NOT EXISTS broadband_city_ix ON broadband (city);
+CREATE INDEX IF NOT EXISTS broadband_address_ix ON broadband (address);
+CREATE INDEX IF NOT EXISTS broadband_provider_ix ON broadband (provider);
+CREATE INDEX IF NOT EXISTS broadband_medium_ix ON broadband (medium);
+CREATE INDEX IF NOT EXISTS broadband_bandwidth_ix ON broadband (bandwidth);
+
 CREATE VIEW IF NOT EXISTS daily_price_avg AS
 SELECT date(timestamp) AS "Date", round(avg(price_pln / area_m2)) AS "PricePerM2", count(DISTINCT ident) AS "OfferCount"
 FROM parcel_offer
