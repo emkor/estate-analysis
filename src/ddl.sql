@@ -150,3 +150,18 @@ WHERE offer.price_pln / offer.area_m2 < 1000
 GROUP BY city
 HAVING count(DISTINCT ident) >= 2
 ORDER BY city;
+
+CREATE VIEW IF NOT EXISTS "city_broadband" AS
+SELECT broadband.city        AS City,
+       count(*)              AS IspApCount,
+       min(bandwidth)        AS BwMin,
+       round(avg(bandwidth)) AS BwAvg,
+       max(bandwidth)        AS BwMax,
+       p.lat                 AS "Lat",
+       p.lon                 AS "Lon"
+FROM broadband
+         INNER JOIN place p on broadband.city = p.city
+WHERE (provider LIKE 'Orange%'
+    OR provider LIKE 'Netia%')
+GROUP BY broadband.city
+ORDER BY broadband.City;
