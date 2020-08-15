@@ -47,24 +47,27 @@ CREATE INDEX IF NOT EXISTS broadband_medium_ix ON broadband (medium);
 CREATE INDEX IF NOT EXISTS broadband_bandwidth_ix ON broadband (bandwidth);
 
 CREATE VIEW IF NOT EXISTS daily_price_avg AS
-SELECT date(timestamp) AS "Date", round(avg(price_pln / area_m2)) AS "PricePerM2", count(DISTINCT ident) AS "OfferCount"
+SELECT date(timestamp)                 AS "Date",
+       round(avg(price_pln / area_m2)) AS "PricePerM2",
+       count(DISTINCT ident)           AS "OfferCount"
 FROM parcel_offer
-WHERE area_m2 >= 800 AND area_m2 <= 3000
+WHERE area_m2 >= 800
+  AND area_m2 <= 3000
 GROUP BY date(timestamp)
 ORDER BY date(timestamp);
 
 CREATE VIEW IF NOT EXISTS latest_offers AS
-SELECT CAST(JulianDay(max(o.timestamp)) - JulianDay(min(OfferHistory."FirstOffer")) AS INTEGER)      AS "Age",
-       min(p.city) AS "City",
-       min(o.location) AS "Location",
-       round(min(o.price_pln) / min(o.area_m2))                                     AS "PricePerSqM",
-       round(min(o.area_m2) / 100)                                                  AS "Area",
-       max(CityAvgPrice."AvgPricePerM2") - round(min(o.price_pln) / min(o.area_m2)) AS "CheaperThanCityAvg",
-       round(max(OfferHistory."HighestPrice") - min(o.price_pln))                   AS "PriceDrop",
-       min(o.ident) AS "ID",
-       o.url AS "URL",
-       min(p.lat) AS "Lat",
-       min(p.lon) AS "Lon"
+SELECT CAST(JulianDay(max(o.timestamp)) - JulianDay(min(OfferHistory."FirstOffer")) AS INTEGER) AS "Age",
+       min(p.city)                                                                              AS "City",
+       min(o.location)                                                                          AS "Location",
+       round(min(o.price_pln) / min(o.area_m2))                                                 AS "PricePerSqM",
+       round(min(o.area_m2) / 100)                                                              AS "Area",
+       max(CityAvgPrice."AvgPricePerM2") - round(min(o.price_pln) / min(o.area_m2))             AS "CheaperThanCityAvg",
+       round(max(OfferHistory."HighestPrice") - min(o.price_pln))                               AS "PriceDrop",
+       min(o.ident)                                                                             AS "ID",
+       o.url                                                                                    AS "URL",
+       min(p.lat)                                                                               AS "Lat",
+       min(p.lon)                                                                               AS "Lon"
 FROM parcel_offer AS o
          LEFT JOIN place p on o.location = p.location
          LEFT JOIN (SELECT city,
@@ -128,7 +131,7 @@ HAVING CAST(JulianDay(max(o.timestamp)) - JulianDay(min(OfferHistory."FirstOffer
 ORDER BY min(p.city), round(min(o.price_pln) / min(o.area_m2));
 
 CREATE VIEW IF NOT EXISTS "avg_city_price" AS
-SELECT city AS "City",
+SELECT city                            AS "City",
        round(avg(price_pln / area_m2)) AS "AvgPricePerM2",
        count(url)                      AS "OfferCount",
        min(lat)                        AS "Lat",

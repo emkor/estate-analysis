@@ -130,3 +130,9 @@ def cli_main():
 
 if __name__ == '__main__':
     cli_main()
+    # main("/home/mat/proj/estate-analysis/data/offers.db",
+    #      "/home/mat/proj/estate-analysis/src/ddl.sql",
+    #      "/home/mat/proj/estate-analysis/data/place_cache.csv",
+    #      "/home/mat/proj/estate-analysis/offers",
+    #      "/home/mat/proj/estate-analysis/data/uke/current",
+    #      "/home/mat/proj/estate-analysis/data/uke/popc")
