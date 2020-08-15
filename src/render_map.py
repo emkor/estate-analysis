@@ -12,16 +12,19 @@ from colour import Color
 from common import setup_log
 
 
-def _read_isochrone_map(map_path: str, narrowest_color: str = "green", broadest_color: str = "red") -> Dict[str, Any]:
+def _read_isochrone_map(map_path: str, narrowest_color: str = "green", broadest_color: str = "red",
+                        time_steps_min: int = 7) -> Dict[str, Any]:
     with codecs.open(map_path, 'r', 'utf-8-sig') as map_:
         map_path = json.load(map_)
     polygon_count = len(map_path["features"])
-    colors = [c.hex for c in Color(narrowest_color).range_to(Color(broadest_color), polygon_count)]
-    for f, c in zip(map_path["features"], colors):
-        f["properties"]["fill"] = colors[0]
-        f["properties"]["fill-opacity"] = 0.04
+    map_path["features"] = map_path["features"][::-1]
+    colors = [c.hex for c in Color(broadest_color).range_to(Color(narrowest_color), polygon_count)]
+    for i, (f, c) in enumerate(zip(map_path["features"], colors)):
+        f["properties"]["fill"] = colors[-1]
+        f["properties"]["fill-opacity"] = 0.03
         f["properties"]["stroke"] = c
         f["properties"]["stroke-opacity"] = 0.8
+        f["properties"]["drive-time"] = f"{(polygon_count - i - 1) * time_steps_min}-{(polygon_count - i) * time_steps_min}min"
     return map_path
 
 
