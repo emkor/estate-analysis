@@ -143,7 +143,11 @@ class Place(Model):
     @classmethod
     def from_csv_row(cls, row: List[str]) -> Optional['Place']:
         try:
-            return Place(*(r or None for r in row)) if len(row) == 5 else None
+            if len(row) == 5:
+                lat, lon = float(row[3]), float(row[4])
+                return Place(row[0], row[1], row[2], lat, lon)
+            else:
+                return None
         except (TypeError, ValueError):
             return None
 

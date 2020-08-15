@@ -32,6 +32,7 @@ dl-data:
 analyze:
 	@echo "---- Analyzing data ----"
 	@$(VENV_PY3) src/cache_places.py "data/place_cache.csv" $$MAPQUEST_API_KEY "offers"
+	@$(VENV_PY3) src/city_distance.py "data/isochrone_wroclaw_car_56min_7min.json" "data/place_cache.csv" "data/time_to_wroclaw.csv"
 	@rm -f "data/offers.db"
 	@$(VENV_PY3) src/import_into_db.py "data/offers.db" "src/ddl.sql" "data/place_cache.csv" "offers" "data/uke/current" "data/uke/popc"
 	@$(VENV_PY3) src/dump_views.py --headers "data/offers.db" "data"
