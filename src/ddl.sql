@@ -7,6 +7,17 @@ CREATE TABLE IF NOT EXISTS place
     lon      FLOAT
 );
 
+CREATE INDEX IF NOT EXISTS city_ix ON place (city);
+CREATE INDEX IF NOT EXISTS postcode_ix ON place (postcode);
+
+CREATE TABLE IF NOT EXISTS time_to_wroclaw
+(
+    city            VARCHAR,
+    time_to_wroclaw INTEGER
+);
+
+CREATE INDEX IF NOT EXISTS time_to_wroclaw_city_ix ON time_to_wroclaw (city);
+
 CREATE TABLE IF NOT EXISTS parcel_offer
 (
     ident     VARCHAR                             NOT NULL,
@@ -23,8 +34,6 @@ CREATE INDEX IF NOT EXISTS title_ix ON parcel_offer (title);
 CREATE INDEX IF NOT EXISTS area_ix ON parcel_offer (area_m2);
 CREATE INDEX IF NOT EXISTS price_ix ON parcel_offer (price_pln);
 CREATE INDEX IF NOT EXISTS timestamp_ix ON parcel_offer (timestamp);
-CREATE INDEX IF NOT EXISTS city_ix ON place (city);
-CREATE INDEX IF NOT EXISTS postcode_ix ON place (postcode);
 
 CREATE TABLE IF NOT EXISTS broadband
 (
@@ -84,6 +93,7 @@ SELECT CAST(JulianDay(max(o.timestamp)) - JulianDay(min(OfferHistory."FirstOffer
        o.url                                                                                    AS "URL",
        min(p.lat)                                                                               AS "Lat",
        min(p.lon)                                                                               AS "Lon",
+       ttw.time_to_wroclaw                                                                      AS "TimeToWroclawMin",
        inet.IspApCount                                                                          AS "NetApCount",
        inet.BwMin                                                                               AS "NetBwMin",
        inet.BwAvg                                                                               AS "NetBwAvg",
@@ -100,6 +110,7 @@ FROM parcel_offer AS o
                     GROUP BY city
                     HAVING count(DISTINCT ident) >= 2
                     ORDER BY round(avg(price_pln / area_m2)) DESC) AS CityAvgPrice ON p.city = CityAvgPrice.city
+         LEFT JOIN time_to_wroclaw AS ttw ON p.city = ttw.city
          LEFT JOIN (SELECT ident,
                            MIN(url),
                            MIN(timestamp) AS "FirstOffer",

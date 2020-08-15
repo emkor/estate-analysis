@@ -48,7 +48,8 @@ def _filter_fields_from_planned_inet_csv_row(row: List[str]) -> Optional[List[st
         return None
 
 
-def main(db_file: str, ddl_script: str, place_cache: str, offers_path: str, inet_curr: str, inet_popc: str):
+def main(db_file: str, ddl_script: str, place_cache: str, time_to_wro: str, offers_path: str, inet_curr: str,
+         inet_popc: str):
     setup_log()
     log = getLogger()
     db_conn: sqlite3.Connection = sqlite3.connect(db_file)
@@ -64,6 +65,17 @@ def main(db_file: str, ddl_script: str, place_cache: str, offers_path: str, inet
             db_conn.commit()
         except sqlite3.IntegrityError as e:
             log.warning(f"Could not insert {len(places_chunk)} rows [{places_chunk[0]}, ..., {places_chunk[-1]}]: {e}")
+
+    log.info(f"Inserting time-to-wroclaw data from {time_to_wro} into DB...")
+    time_to_wro_iter = ((r[0], int(r[1]) if r[1] else None) for r in read_csv(time_to_wro))
+    for row_chunk in chunked(time_to_wro_iter, 50):
+        try:
+            c = db_conn.cursor()
+            c.executemany("INSERT INTO time_to_wroclaw VALUES (?,?)", row_chunk)
+            c.close()
+            db_conn.commit()
+        except sqlite3.IntegrityError as e:
+            log.warning(f"Could not insert {len(row_chunk)} rows [{row_chunk[0]}, ..., {row_chunk[-1]}]: {e}")
 
     for inet_curr_csv in list_csv_files(inet_curr):
         log.info(f"Inserting current broadband data from CSVs under {inet_curr_csv} into DB...")
@@ -116,6 +128,7 @@ def _parse_args() -> argparse.Namespace:
     parser.add_argument('db', type=str, help='Path to sqlite3 DB file')
     parser.add_argument('ddl', type=str, help='Path to SQL DDL script executed before data insertion')
     parser.add_argument('place', type=str, help='Path to CSV file with Places cache')
+    parser.add_argument('time_to_wro', type=str, help='Path to CSV file with time-to-wroclaw data')
     parser.add_argument('offer', type=str, help='Path to directory containing offer CSV files')
     parser.add_argument('inet_curr', type=str, help='Path to directory containing current broadband infrastructure')
     parser.add_argument('inet_popc', type=str, help='Path to directory containing planned '
@@ -125,7 +138,7 @@ def _parse_args() -> argparse.Namespace:
 
 def cli_main():
     args = _parse_args()
-    main(args.db, args.ddl, args.place, args.offer, args.inet_curr, args.inet_popc)
+    main(args.db, args.ddl, args.place, args.time_to_wro, args.offer, args.inet_curr, args.inet_popc)
 
 
 if __name__ == '__main__':
@@ -133,6 +146,7 @@ if __name__ == '__main__':
     # main("/home/mat/proj/estate-analysis/data/offers.db",
     #      "/home/mat/proj/estate-analysis/src/ddl.sql",
     #      "/home/mat/proj/estate-analysis/data/place_cache.csv",
+    #      "/home/mat/proj/estate-analysis/data/time_to_wroclaw.csv",
     #      "/home/mat/proj/estate-analysis/offers",
     #      "/home/mat/proj/estate-analysis/data/uke/current",
     #      "/home/mat/proj/estate-analysis/data/uke/popc")
